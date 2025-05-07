@@ -1,0 +1,323 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Start Screen Stuff/CreditsVersion2.gd" type="Script" id=1]
+[ext_resource path="res://Start Screen Stuff/typefaces/Hobby-of-night.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Start Screen Stuff/StartMenuBackground.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Start Screen Stuff/typefaces/nanook_BOLD.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://sounds/Cabin.MP3" type="AudioStream" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 96
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=6]
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 15
+font_data = ExtResource( 4 )
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Background/ViewportContainer/Viewport/Camera:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 32.9721, 5.75119, -31.758 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Background/ViewportContainer/Viewport/Camera:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( -18.2517, -139.546, -0.785691 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "camera"
+length = 25.0
+step = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Background/ViewportContainer/Viewport/Camera:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 25, 25.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 32.9721, 5.75119, -31.758 ), Vector3( 34.9356, 5.75119, -33.3088 ), Vector3( 36.2044, 5.75119, -33.9786 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Background/ViewportContainer/Viewport/Camera:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( -18.2517, -139.546, -0.785691 ), Vector3( -18.2517, -176.287, -0.785691 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "CreditsAnimation"
+length = 25.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Menu/CreditsContainer:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.001, 1090 ), Vector2( 0.001, -1250 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Menu/MarginContainer/VBoxContainer:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 19.8, 23.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 60, 0 ), Vector2( 60, 0 ), Vector2( 60, -120 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Menu/Dr0Container:rect_position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 19.8, 25 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.001, 1090 ), Vector2( 0.001, 1090 ), Vector2( 0.001, -480 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "New Anim"
+
+[sub_resource type="Animation" id=9]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Menu/CreditsContainer:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0.001, 800 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Menu/MarginContainer/VBoxContainer:margin_left")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 60.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Menu/MarginContainer/VBoxContainer:rect_position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 60, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Menu/Dr0Container:rect_position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0.001, 800 ) ]
+}
+
+[node name="Credits2" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="Background" type="Spatial" parent="."]
+
+[node name="StartMenuBackground" parent="Background" instance=ExtResource( 3 )]
+
+[node name="ViewportContainer" type="ViewportContainer" parent="Background"]
+margin_right = 1920.0
+margin_bottom = 1080.0
+stretch = true
+
+[node name="Viewport" type="Viewport" parent="Background/ViewportContainer"]
+size = Vector2( 1280, 720 )
+handle_input_locally = false
+render_target_update_mode = 3
+
+[node name="Camera" type="Camera" parent="Background/ViewportContainer/Viewport"]
+transform = Transform( -0.763642, 0.192757, -0.616194, -0.0130226, 0.949601, 0.313192, 0.645508, 0.247191, -0.722645, 32.9721, 5.75119, -31.758 )
+
+[node name="Menu" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -118.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Menu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 256.0
+margin_bottom = -239.0
+custom_constants/margin_right = 80
+custom_constants/margin_left = 60
+custom_constants/margin_bottom = 80
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/MarginContainer"]
+margin_left = 60.0
+margin_right = 2096.0
+margin_bottom = 643.0
+
+[node name="title" type="Label" parent="Menu/MarginContainer/VBoxContainer"]
+margin_right = 2036.0
+margin_bottom = 126.0
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Critter Quest"
+
+[node name="CreditsContainer" type="Container" parent="Menu"]
+margin_left = 0.001
+margin_top = 800.0
+margin_right = 1920.0
+margin_bottom = 1520.03
+rect_min_size = Vector2( 1080, 720 )
+
+[node name="credits" type="Label" parent="Menu/CreditsContainer"]
+margin_right = 1920.0
+margin_bottom = 959.0
+rect_min_size = Vector2( 0, 720 )
+custom_fonts/font = SubResource( 6 )
+text = "Asset Designers:
+Erinma Arki
+Avis Bomberry
+Rebecca Charlton
+Hala Jaber
+Konatsu Wang
+Keiko Kushibiki
+Anusha Menon
+Nada Ayoub
+Naomi Redwood
+Jack Le Tran
+Onai White
+Shiqi Yu
+Jiawei Wu
+
+Level Design:
+Mikaela Barbosa
+Amanda Dam
+Jacob Grobe
+Kennedy Griffiths
+Leo Jatuweerapong
+Megan Moniz
+Frances Ruiz Banguis
+
+Sound Design:
+Sijiawa Gao
+Jack Le Tran
+
+UI Design:
+Nadia Lofaro
+
+Programming:
+Zeeshan Ahmad Paracha
+Dr. David Ogborn
+
+Pro-fessor/-ducer: 
+Dr. David Ogborn"
+align = 1
+
+[node name="Dr0Container" type="Container" parent="Menu"]
+margin_left = 0.001
+margin_top = 800.0
+margin_right = 1920.0
+margin_bottom = 1200.0
+rect_min_size = Vector2( 1080, 100 )
+
+[node name="Label" type="Label" parent="Menu/Dr0Container"]
+margin_right = 1920.0
+margin_bottom = 549.0
+custom_fonts/font = SubResource( 10 )
+text = "Audio Sources from freesound.org under the Creative Commons 0 License:
+\"Wind Synth High Altitude\" by android lime
+\"breviceps\" by Owl Hoot
+\"Woods ambience in missouri some birds singing and soft breeze\" by felixblume
+\"Forest bird 1\" by sama66
+\"Crackling fire\" by samarobryn
+\"autumn wind and dry leaves\" by stek59
+\"cold howling windbreeze loopable\" by the isot is back
+\"old engine sound\" by vendarro
+\"pelicans babies and pelican waves\" by yfjesse
+
+Typefaces under the SIL Open Font License (OFL):
+Nanook
+Hobby of Night
+
+HDRI Image Credits
+River Walk 1 - Greg Zaal (source: Polyhaven, CC0) 
+Background Image - Alps Field by Andreas Mischok (source: Polyhaven, CC0 license) 
+Pizzo Pernice - Andres Mischok & Jarod Guest (Source: Poly Haven CC0)
+Kiara 1 Dawn - Greg Zaal (Source: Poly Haven, CC0)
+
+
+"
+align = 1
+
+[node name="AnimationPlayerforBackground" type="AnimationPlayer" parent="."]
+autoplay = "camera"
+anims/RESET = SubResource( 4 )
+anims/camera = SubResource( 5 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 15.0
+
+[node name="AnimationPlayerforCredits" type="AnimationPlayer" parent="."]
+autoplay = "CreditsAnimation"
+anims/CreditsAnimation = SubResource( 7 )
+"anims/New Anim" = SubResource( 8 )
+anims/RESET = SubResource( 9 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
+
+[connection signal="animation_finished" from="AnimationPlayerforCredits" to="." method="_on_AnimationPlayerforCredits_animation_finished"]

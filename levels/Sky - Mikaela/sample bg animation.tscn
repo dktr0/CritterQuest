@@ -1,0 +1,51 @@
+[gd_scene load_steps=11 format=2]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.00286533, 0.00738916, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 0.690544, 0.690544, 0.690544, 1, 0.808901, 0.808901, 0.808901, 1, 1, 1, 1, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="Gradient" id=3]
+offsets = PoolRealArray( 0, 0.00246305, 0.0862069, 0.573892 )
+colors = PoolColorArray( 0, 0, 0, 1, 0.398477, 0.398477, 0.398477, 1, 0.234957, 0.234957, 0.234957, 1, 1, 1, 1, 1 )
+
+[sub_resource type="GradientTexture" id=4]
+gradient = SubResource( 3 )
+
+[sub_resource type="Gradient" id=5]
+offsets = PoolRealArray( 0, 0.00246305 )
+
+[sub_resource type="GradientTexture" id=6]
+gradient = SubResource( 5 )
+
+[sub_resource type="AnimatedTexture" id=7]
+flags = 4
+frames = 3
+frame_0/texture = SubResource( 2 )
+frame_1/texture = SubResource( 4 )
+frame_1/delay_sec = 0.0
+frame_2/texture = SubResource( 6 )
+frame_2/delay_sec = 0.0
+
+[sub_resource type="SpatialMaterial" id=8]
+albedo_texture = SubResource( 7 )
+
+[sub_resource type="QuadMesh" id=9]
+material = SubResource( 8 )
+
+[sub_resource type="BoxShape" id=10]
+extents = Vector3( 157.93, 52.2934, 14.8052 )
+
+[node name="sample bg animation" type="Spatial"]
+
+[node name="animation" type="Spatial" parent="."]
+
+[node name="MeshInstance" type="MeshInstance" parent="animation"]
+transform = Transform( 260.893, 0, 0, 0, 80.4686, 0, 0, 0, 1, -13.6789, 0, -72.1432 )
+mesh = SubResource( 9 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.25714, -0.517559, -71.2745 )
+shape = SubResource( 10 )

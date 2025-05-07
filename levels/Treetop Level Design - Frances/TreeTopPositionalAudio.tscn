@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Positional Audio/sama66__Forest-bird-1 (Modified).wav" type="AudioStream" id=1]
+[ext_resource path="res://Positional Audio/stek59__autumn-wind-and-dry-leaves.wav" type="AudioStream" id=2]
+
+[node name="TreeTopPositionalAudio" type="Spatial"]
+
+[node name="BirdAmbience" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -88.8478, 27.4585, 56.3495 )
+stream = ExtResource( 1 )
+unit_db = 15.0
+autoplay = true
+
+[node name="BirdAmbience2" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 69.7212, 27.4585, 45.1964 )
+stream = ExtResource( 1 )
+unit_db = 15.0
+autoplay = true
+
+[node name="BirdAmbience3" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 69.7212, 27.4585, -123.469 )
+stream = ExtResource( 1 )
+unit_db = 15.0
+autoplay = true
+
+[node name="BirdAmbience4" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -109.101, 8.42571, -123.469 )
+stream = ExtResource( 1 )
+unit_db = 15.0
+autoplay = true
+
+[node name="WindAmbience" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.967184, 40.7481, 42.74 )
+stream = ExtResource( 2 )
+unit_db = 15.0
+autoplay = true
+
+[node name="WindAmbience2" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.967184, 40.7481, -119.569 )
+stream = ExtResource( 2 )
+unit_db = 15.0
+autoplay = true
+
+[node name="WindAmbience3" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 70.0149, 40.7481, -44.2562 )
+stream = ExtResource( 2 )
+unit_db = 15.0
+autoplay = true
+
+[node name="WindAmbience4" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -88.8785, 40.7481, -44.2562 )
+stream = ExtResource( 2 )
+unit_db = 15.0
+autoplay = true

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Treetop.MP3-50759984ed8558cd0d06356d57a76727.mp3str"
+
+[deps]
+
+source_file="res://sounds/Treetop.MP3"
+dest_files=[ "res://.import/Treetop.MP3-50759984ed8558cd0d06356d57a76727.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

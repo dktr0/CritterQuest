@@ -1,0 +1,205 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://models-glb/LEO GROUND CUBE.glb" type="PackedScene" id=1]
+[ext_resource path="res://models-tscn/WALL.tscn" type="PackedScene" id=2]
+[ext_resource path="res://models-glb/LEO ground CUBE MATERIAL.material" type="Material" id=3]
+[ext_resource path="res://models-glb/LEO GROUND CUBE.glb" type="PackedScene" id=4]
+
+[sub_resource type="ArrayMesh" id=1]
+resource_name = "LEO GROUND CUBE_Cube"
+surfaces/0 = {
+"aabb": AABB( -1, -1, -1, 2.00001, 2.00001, 2 ),
+"array_data": PoolByteArray( 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 191, 127, 127, 0, 127, 0, 57, 0, 56, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 191, 0, 127, 129, 63, 0, 57, 0, 56, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 191, 127, 0, 0, 127, 0, 57, 0, 56, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 191, 0, 129, 127, 63, 0, 54, 0, 56, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 191, 127, 127, 0, 127, 0, 54, 0, 56, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 191, 127, 0, 0, 127, 0, 54, 0, 56, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 0, 127, 0, 57, 0, 52, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63, 0, 127, 129, 63, 0, 57, 0, 52, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63, 127, 0, 0, 127, 0, 57, 0, 52, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 63, 0, 129, 127, 63, 0, 54, 0, 52, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 0, 127, 0, 54, 0, 52, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 63, 127, 0, 0, 127, 0, 54, 0, 52, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 191, 129, 0, 0, 127, 0, 57, 0, 58, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 191, 127, 127, 0, 127, 0, 57, 0, 58, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 191, 0, 127, 129, 63, 0, 59, 0, 56, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 191, 129, 0, 0, 127, 0, 54, 0, 58, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 191, 0, 129, 127, 63, 0, 48, 0, 56, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 191, 127, 127, 0, 127, 0, 54, 0, 58, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 63, 129, 0, 0, 127, 0, 57, 0, 60, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 0, 127, 0, 57, 0, 0, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 63, 0, 127, 129, 63, 0, 59, 0, 52, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 63, 129, 0, 0, 127, 0, 54, 0, 60, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 63, 0, 129, 127, 63, 0, 48, 0, 52, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 0, 127, 0, 54, 0, 0 ),
+"array_index_data": PoolByteArray( 1, 0, 20, 0, 14, 0, 1, 0, 7, 0, 20, 0, 10, 0, 19, 0, 6, 0, 10, 0, 23, 0, 19, 0, 21, 0, 12, 0, 18, 0, 21, 0, 15, 0, 12, 0, 16, 0, 9, 0, 3, 0, 16, 0, 22, 0, 9, 0, 5, 0, 8, 0, 2, 0, 5, 0, 11, 0, 8, 0, 17, 0, 0, 0, 13, 0, 17, 0, 4, 0, 0, 0 ),
+"blend_shape_data": [  ],
+"format": 2194711,
+"index_count": 36,
+"material": ExtResource( 3 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 24
+}
+
+[sub_resource type="ConcavePolygonShape" id=2]
+data = PoolVector3Array( 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 1, 1, 1, -1, 1, -1, 1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1, -1, -1, 1, 1, -1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, 1, 1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, -1 )
+
+[node name="base land area" type="Spatial"]
+
+[node name="environment" type="Spatial" parent="."]
+
+[node name="A GREY BOX" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 128, 0, 0, 0, 10, 0, 0, 0, 70, -14.7748, -9.64111, -42.5705 )
+
+[node name="A GREY BOX2" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 2, 0, 0, 0, 2, 54.0985, 0.931158, -108.234 )
+
+[node name="A GREY BOX3" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 2, 0, 0, 0, 2, 30.9721, 0.931158, -108.234 )
+
+[node name="A GREY BOX4" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 2, 0, 0, 0, 2, 77.3501, 0.931158, -108.234 )
+
+[node name="A GREY BOX5" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 2, 0, 0, 0, 2, 99.9233, 0.931158, -108.234 )
+
+[node name="A GREY BOX6" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 2, 0, 0, 0, 2, -106.83, 0.931158, -108.234 )
+
+[node name="A GREY BOX7" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 2, 0, 0, 0, 2, -128.693, 0.931158, -108.234 )
+
+[node name="A GREY BOX8" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 2, 0, 0, 0, 2, -85.2811, 0.931158, -108.234 )
+
+[node name="A GREY BOX9" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 2, 0, 0, 0, 2, -63.9779, 0.931158, -108.234 )
+
+[node name="A GREY BOX10" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 2, 0, 0, 0, 2, -42.4693, 0.931158, -108.234 )
+
+[node name="A GREY BOX11" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 10, 0, 0, 0, 2, 0, 0, 0, 2, 7.85144, 0.931158, -108.234 )
+
+[node name="A GREY BOX12" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 50, 0, 0, 0, 2, 0, 0, 0, 2, 50.3727, -0.0611687, -108.234 )
+
+[node name="A GREY BOX13" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 50, 0, 0, 0, 2, 0, 0, 0, 2, -85.8524, -0.0611687, -108.234 )
+
+[node name="A GREY BOX14" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 17, 0, 0, 0, 2, 0, 0, 0, 2, -17.5623, -3.91954, -114.031 )
+
+[node name="A GREY BOX15" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 17, 0, 0, 0, 2, 0, 0, 0, 4, -17.5623, -5.66057, -114.751 )
+
+[node name="A GREY BOX16" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 17, 0, 0, 0, 2, 0, 0, 0, 8, -17.5623, -7.46203, -113.848 )
+
+[node name="A GREY BOX17" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 17, 0, 0, 0, 2, 0, 0, 0, 8, -17.5623, -9.14478, -116.733 )
+
+[node name="A GREY BOX18" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 129, 0, 0, 0, 3, 0, 0, 0, 71, -14.7748, -10.4432, -42.5705 )
+
+[node name="A GREY BOX19" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 80, 0, 0, 0, 2, 0, 0, 0, 2, -60.1072, 5.49684, -41.4662 )
+
+[node name="A GREY BOX20" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 80, 0, 0, 0, 2, 0, 0, 0, 4, -60.1072, 3.78228, -42.1863 )
+
+[node name="A GREY BOX21" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 80, 0, 0, 0, 2, 0, 0, 0, 8, -60.1072, 2.25222, -41.2834 )
+
+[node name="A GREY BOX22" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 80, 0, 0, 0, 2, 0, 0, 0, 8, -60.1072, 0.728944, -44.1686 )
+
+[node name="A GREY BOX23" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 80, 0, 0, 0, 2, 0, 0, 0, 10, -60.1072, 12.0911, -21.8789 )
+
+[node name="A GREY BOX24" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 80, 0, 0, 0, 2, 0, 0, 0, 4, -60.1072, 10.3765, -30.9145 )
+
+[node name="A GREY BOX25" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 80, 0, 0, 0, 2, 0, 0, 0, 8, -60.1072, 8.84643, -30.0116 )
+
+[node name="A GREY BOX26" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 80, 0, 0, 0, 2, 0, 0, 0, 8, -60.1072, 7.32316, -32.8968 )
+
+[node name="A GREY BOX27" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 80, 0, 0, 0, 2, 0, 0, 0, 10, -60.1072, 14.4245, -18.6676 )
+
+[node name="A GREY BOX28" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 80, 0, 0, 0, 2, 0, 0, 0, 2, -60.1072, 21.2517, 1.44292 )
+
+[node name="A GREY BOX29" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 80, 0, 0, 0, 2, 0, 0, 0, 4, -60.1072, 19.5372, 0.722795 )
+
+[node name="A GREY BOX30" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 80, 0, 0, 0, 2, 0, 0, 0, 8, -60.1072, 18.0071, 1.62572 )
+
+[node name="A GREY BOX31" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 80, 0, 0, 0, 2, 0, 0, 0, 8, -60.1072, 16.4838, -1.25945 )
+
+[node name="A GREY BOX32" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( -7.93668e-07, 0, 9.06023, 0, 1.74457, 0, -18.157, 0, -3.96035e-07, -79.6838, 27.9557, 20.601 )
+
+[node name="A GREY BOX33" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( -7.93668e-07, 0, 3.6241, 0, 1.74457, 0, -18.157, 0, -1.58414e-07, -87.8686, 26.4601, 20.4276 )
+
+[node name="A GREY BOX34" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( -7.93668e-07, 0, 7.24818, 0, 1.74457, 0, -18.157, 0, -3.16828e-07, -87.0507, 25.1255, 20.4449 )
+
+[node name="A GREY BOX35" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 80, 0, 0, 0, 2, 0, 0, 0, 28, -60.1072, 23.078, 30.2584 )
+
+[node name="A GREY BOX36" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( -7.93668e-07, 0, 9.06023, 0, 1.74457, 0, -18.157, 0, -3.96035e-07, -76.775, 29.4883, 20.6627 )
+
+[node name="A GREY BOX37" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( -7.93668e-07, 0, 9.06023, 0, 1.74457, 0, -18.157, 0, -3.96035e-07, -71.4754, 32.2851, 20.601 )
+
+[node name="A GREY BOX38" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( -7.93668e-07, 0, 3.6241, 0, 1.74457, 0, -18.157, 0, -1.58414e-07, -79.66, 30.7894, 20.4276 )
+
+[node name="A GREY BOX41" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( -2.49155e-06, 0, 70, 0, 2, 0, -44.7093, 0, -2.40003e-06, -7.48457, 31.8839, 46.9038 )
+
+[node name="A GREY BOX42" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( -1.16541e-06, 0, 20.0263, 0, 2, 0, -26.6614, 0, -8.75377e-07, -85.6584, 31.8839, 65.1369 )
+
+[node name="A GREY BOX43" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( -2.49155e-06, 0, 70, 0, 8.3794, 0, -44.7093, 0, -2.40003e-06, -7.48457, 25.8946, 46.9551 )
+
+[node name="A GREY BOX44" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( -1.16541e-06, 0, 20.0263, 0, 8.3794, 0, -26.6614, 0, -8.75377e-07, -85.3751, 25.8946, 65.1369 )
+
+[node name="A GREY BOX46" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( -1.74846e-06, 0, 40, 0, 2, 0, -40, 0, -1.74846e-06, 53.2085, 31.8839, 51.4839 )
+
+[node name="A GREY BOX47" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 7.23558, 0, 46.7794, 0, 2, 0, -39.5429, 0, 6.03446, 44.1018, 31.8839, 22.6865 )
+
+[node name="A GREY BOX48" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( -8.54075, 0, 43.9654, 0, 2, 0, -39.2372, 0, -11.5143, -30.8588, 31.8839, 27.9798 )
+
+[node name="A GREY BOX49" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 5.01272, 0, 45.0925, 0, 9, 0, -39.8419, 0, 5.67332, 43.4596, 7.17003, 22.6865 )
+
+[node name="A GREY BOX50" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( -10.1228, 0, 43.9803, 0, 9, 0, -38.8591, 0, -11.4568, -29.3863, 25.2082, 27.6837 )
+
+[node name="A GREY BOX51" parent="environment" instance=ExtResource( 1 )]
+transform = Transform( 4.97516, 0, 45.0978, 0, 9, 0, -39.8466, 0, 5.63082, 43.4596, 24.2727, 22.6865 )
+
+[node name="WALL" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.446595, -0.122787, 2.14688e-09, 0, -4.37114e-08, -0.4, 0.0552543, 0.992433, -1.73522e-08, 48.9253, 5.37527, -18.0063 )
+
+[node name="WALL2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.454736, 0.252779, -4.41972e-09, 0, -4.37114e-08, -0.4, -0.118806, 0.967524, -1.69167e-08, -39.0603, 7.35821, -11.3113 )
+
+[node name="LEO GROUND CUBE" type="Spatial" parent="."]
+transform = Transform( 130, 0, 0, 0, 1, 0, 0, 0, 50, -14.6289, -0.240627, -62.4065 )
+
+[node name="Cube" type="MeshInstance" parent="LEO GROUND CUBE"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0428915 )
+mesh = SubResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="LEO GROUND CUBE/Cube"]
+
+[node name="CollisionShape" type="CollisionShape" parent="LEO GROUND CUBE/Cube/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="LEO GROUND CUBE2" type="Spatial" parent="."]
+transform = Transform( 80, 0, 0, 0, 1, 0, 0, 0, 20, -59.9303, 15.6468, -7.69098 )
+
+[node name="Cube" type="MeshInstance" parent="LEO GROUND CUBE2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0428915 )
+mesh = SubResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="LEO GROUND CUBE2/Cube"]
+
+[node name="CollisionShape" type="CollisionShape" parent="LEO GROUND CUBE2/Cube/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="leo grey grass block" parent="." instance=ExtResource( 4 )]
+transform = Transform( 30, 0, 0, 0, 1, 0, 0, 0, 28, -110.134, 24.2032, 30.4359 )

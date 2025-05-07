@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Positional Audio/android_lime__wind_synth_high_altitude.wav" type="AudioStream" id=1]
+[ext_resource path="res://Positional Audio/vendarro__old-engine-sound.wav" type="AudioStream" id=2]
+
+[node name="SkyPositionalAudio" type="Spatial"]
+
+[node name="SkyAmbience" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 72.8933, 52.7692, 0 )
+stream = ExtResource( 1 )
+unit_db = 10.0
+autoplay = true
+
+[node name="SkyAmbience2" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -106.067, 52.6201, 0 )
+stream = ExtResource( 1 )
+unit_db = 10.0
+autoplay = true
+
+[node name="SkyAmbience3" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.51762, 52.6201, -61.9926 )
+stream = ExtResource( 1 )
+unit_db = 10.0
+autoplay = true
+
+[node name="PlaneAmbience" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32.8638, 41.997, -1.91776 )
+stream = ExtResource( 2 )
+unit_db = 15.0
+autoplay = true

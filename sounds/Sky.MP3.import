@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Sky.MP3-4f32d825fe150abeebfa557f24ef59af.mp3str"
+
+[deps]
+
+source_file="res://sounds/Sky.MP3"
+dest_files=[ "res://.import/Sky.MP3-4f32d825fe150abeebfa557f24ef59af.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

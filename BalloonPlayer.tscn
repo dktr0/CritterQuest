@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Player.gd" type="Script" id=1]
+[ext_resource path="res://levels/Sky - Mikaela/BalloonMeshesAndLight.tscn" type="PackedScene" id=3]
+
+[sub_resource type="BoxShape" id=1]
+
+[node name="BalloonPlayer" type="KinematicBody"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 2.23634, 0, 0, 0, 4.17509, 0, 0, 0, 2.50211, 0.0718789, 3.94524, 0 )
+shape = SubResource( 1 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.99929, -0.00654484, 0.0371176, 0.00411041, 0.997858, 0.065288, -0.0374654, -0.0650891, 0.997176, 0.650972, 2.29903, 16.9875 )
+far = 1000.0
+
+[node name="InteractionRaycast" type="RayCast" parent="Camera"]
+transform = Transform( 1, 4.65661e-10, -3.72529e-09, 0, 1, 0, 3.72529e-09, 0, 1, 0, 0, 0 )
+enabled = true
+cast_to = Vector3( 0, 0, -30 )
+collision_mask = 2
+
+[node name="BalloonMeshesAndLight" parent="." instance=ExtResource( 3 )]

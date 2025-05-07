@@ -1,0 +1,2314 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://images/CabinLevelBackground.webp" type="Texture" id=1]
+[ext_resource path="res://levels/Cabin Cut Scene-KennedyG/AnimatedCat.tscn" type="PackedScene" id=2]
+[ext_resource path="res://models-tscn/ShiqiBushes-2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://models-tscn/ShiqiBushes-3.tscn" type="PackedScene" id=4]
+[ext_resource path="res://models-tscn/Flower 3.tscn" type="PackedScene" id=5]
+[ext_resource path="res://models-tscn/Flower 1.tscn" type="PackedScene" id=6]
+[ext_resource path="res://models-tscn/ShiqiBushes-1.tscn" type="PackedScene" id=7]
+[ext_resource path="res://models-tscn/Flower 2.tscn" type="PackedScene" id=8]
+[ext_resource path="res://models-tscn/CharltonLog.tscn" type="PackedScene" id=9]
+[ext_resource path="res://models-tscn/Mushroom_Onai.tscn" type="PackedScene" id=10]
+[ext_resource path="res://levels/Cabin Cut Scene-KennedyG/Ground.tscn" type="PackedScene" id=11]
+[ext_resource path="res://levels/Cabin Cut Scene-KennedyG/NewCabin.tscn" type="PackedScene" id=12]
+[ext_resource path="res://levels/Cabin Cut Scene-KennedyG/Shiqi-Tree(KG).tscn" type="PackedScene" id=13]
+[ext_resource path="res://models-tscn/SteppingStone_Onai.tscn" type="PackedScene" id=14]
+[ext_resource path="res://levels/Cabin Cut Scene-KennedyG/Cabin Cut Scene-Materials/KG-deck.material" type="Material" id=15]
+[ext_resource path="res://models-tscn/Jaber_OtterwithAnimation.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Start Screen Stuff/StartMenuBackground.gd" type="Script" id=17]
+[ext_resource path="res://models-tscn/Jaber_PolarBearCharacterwithoutscarf.tscn" type="PackedScene" id=18]
+[ext_resource path="res://models-tscn/Charlton_ForestPond.tscn" type="PackedScene" id=19]
+[ext_resource path="res://models-tscn/flower_NH(fromtable).tscn" type="PackedScene" id=20]
+[ext_resource path="res://models-tscn/Charlton_Well.tscn" type="PackedScene" id=21]
+
+[sub_resource type="PlaneMesh" id=14]
+
+[sub_resource type="BoxShape" id=15]
+extents = Vector3( 1, 0.343781, 1 )
+
+[sub_resource type="PanoramaSky" id=13]
+panorama = ExtResource( 1 )
+
+[sub_resource type="Environment" id=16]
+background_mode = 2
+background_sky = SubResource( 13 )
+background_sky_custom_fov = 127.0
+
+[node name="StartMenuBackground" type="Spatial"]
+script = ExtResource( 17 )
+
+[node name="Environment" type="Spatial" parent="."]
+
+[node name="Tree\'s" type="Spatial" parent="Environment"]
+
+[node name="Shiqi-Tree" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 13.5437, 0, -46.4154 )
+
+[node name="Shiqi-Tree2" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 22.7139, 0, -46.4154 )
+
+[node name="Shiqi-Tree3" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 22.7139, 0, -28.6393 )
+
+[node name="Shiqi-Tree99" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 32.5658, 0, -35.1359 )
+
+[node name="Shiqi-Tree100" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 48.5071, 0, -40.4568 )
+
+[node name="Shiqi-Tree101" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 32.3953, 0, -52.5406 )
+
+[node name="Shiqi-Tree102" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 47.8752, 0, -59.9646 )
+
+[node name="Shiqi-Tree103" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.316697, 0, 0.155347, 0, 0.352746, 0, -0.155347, 0, 0.316697, 45.2689, 0, -67.3887 )
+
+[node name="Shiqi-Tree104" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.316697, 0, 0.155347, 0, 0.352746, 0, -0.155347, 0, 0.316697, 23.3127, 0, -74.2994 )
+
+[node name="Shiqi-Tree105" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.316697, 0, 0.155347, 0, 0.352746, 0, -0.155347, 0, 0.316697, 23.1548, 0, -84.3692 )
+
+[node name="Shiqi-Tree106" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.316697, 0, 0.155347, 0, 0.352746, 0, -0.155347, 0, 0.316697, 41.083, 0, -81.289 )
+
+[node name="Shiqi-Tree107" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.316697, 0, 0.155347, 0, 0.352746, 0, -0.155347, 0, 0.316697, 22.4045, 0, -92.3856 )
+
+[node name="Shiqi-Tree168" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.316697, 0, 0.155347, 0, 0.352746, 0, -0.155347, 0, 0.316697, 18.3314, 0, -95.2095 )
+
+[node name="Shiqi-Tree169" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.316697, 0, 0.155347, 0, 0.352746, 0, -0.155347, 0, 0.316697, 13.0497, 0, -109.294 )
+
+[node name="Shiqi-Tree170" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.316697, 0, 0.155347, 0, 0.352746, 0, -0.155347, 0, 0.316697, 13.5489, 0, -98.0738 )
+
+[node name="Shiqi-Tree108" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.316697, 0, 0.155347, 0, 0.352746, 0, -0.155347, 0, 0.316697, 42.2282, 0, -99.9281 )
+
+[node name="Shiqi-Tree109" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.316697, 0, 0.155347, 0, 0.352746, 0, -0.155347, 0, 0.316697, 38.9308, 0, -111.36 )
+
+[node name="Shiqi-Tree110" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.316697, 0, 0.155347, 0, 0.352746, 0, -0.155347, 0, 0.316697, 23.0758, 0, -104.864 )
+
+[node name="Shiqi-Tree164" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.316697, 0, 0.155347, 0, 0.352746, 0, -0.155347, 0, 0.316697, 21.4786, 0, -112.086 )
+
+[node name="Shiqi-Tree97" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, -5.34493, 0, -11.7442 )
+
+[node name="Shiqi-Tree4" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 73.0796, 0, -42.183 )
+
+[node name="Shiqi-Tree5" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 73.0796, 0, -56.5732 )
+
+[node name="Shiqi-Tree6" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 47.403, 0, -49.9424 )
+
+[node name="Shiqi-Tree7" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 59.5359, 0, -30.3322 )
+
+[node name="Shiqi-Tree8" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 41.5973, 0, -70.9859 )
+
+[node name="Shiqi-Tree9" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 12.8664, 0, -70.9859 )
+
+[node name="Shiqi-Tree10" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 12.8664, 0, -6.23207 )
+
+[node name="Shiqi-Tree11" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 90.1627, 0, -6.23207 )
+
+[node name="Shiqi-Tree12" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 90.1627, 0, -102.519 )
+
+[node name="Shiqi-Tree13" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 107.256, 0, -59.8932 )
+
+[node name="Shiqi-Tree14" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 107.256, 0, -93.215 )
+
+[node name="Shiqi-Tree15" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, -5.37357, 0, -1.26727 )
+
+[node name="Shiqi-Tree96" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, -6.86871, 0, -23.8439 )
+
+[node name="Shiqi-Tree16" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 4.36322, 0, 6.44504 )
+
+[node name="Shiqi-Tree17" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 24.0778, 0, 6.44504 )
+
+[node name="Shiqi-Tree18" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 32.465, 0, 1.72125 )
+
+[node name="Shiqi-Tree19" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 49.3356, 0, 1.72125 )
+
+[node name="Shiqi-Tree20" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 42.2018, 0, 6.97526 )
+
+[node name="Shiqi-Tree21" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 54.7343, 0, 6.87886 )
+
+[node name="Shiqi-Tree22" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 64.8567, 0, 7.98751 )
+
+[node name="Shiqi-Tree23" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.352746, 0, 0, 0, 0.352746, 0, 0, 0, 0.352746, 71.7495, 0, -0.929857 )
+
+[node name="Shiqi-Tree24" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.352746, 0, -0.00454341, 0, -0.352717, 109.42, 0, -115.575 )
+
+[node name="Shiqi-Tree25" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.352746, 0, -0.00454341, 0, -0.352717, 99.7831, 0, -123.412 )
+
+[node name="Shiqi-Tree26" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.352746, 0, -0.00454341, 0, -0.352717, 80.0702, 0, -123.666 )
+
+[node name="Shiqi-Tree27" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.352746, 0, -0.00454341, 0, -0.352717, 71.6228, 0, -119.05 )
+
+[node name="Shiqi-Tree28" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.352746, 0, -0.00454341, 0, -0.352717, 54.7536, 0, -119.268 )
+
+[node name="Shiqi-Tree29" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.352746, 0, -0.00454341, 0, -0.352717, 61.9545, 0, -124.429 )
+
+[node name="Shiqi-Tree30" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.352746, 0, -0.00454341, 0, -0.352717, 49.4218, 0, -124.494 )
+
+[node name="Shiqi-Tree31" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.352746, 0, -0.00454341, 0, -0.352717, 39.3145, 0, -124.339 )
+
+[node name="Shiqi-Tree32" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.352746, 0, -0.00454341, 0, -0.352717, 32.3074, 0, -116.905 )
+
+[node name="Shiqi-Tree140" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.352746, 0, -0.00454341, 0, -0.352717, 9.81734, 0, -123.331 )
+
+[node name="Shiqi-Tree141" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.352746, 0, -0.00454341, 0, -0.352717, 5.36385, 0, -116.746 )
+
+[node name="Shiqi-Tree142" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.352746, 0, -0.00454341, 0, -0.352717, 10.3263, 0, -117.923 )
+
+[node name="Shiqi-Tree143" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.352746, 0, -0.00454341, 0, -0.352717, 19.106, 0, -117.001 )
+
+[node name="Shiqi-Tree166" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.352746, 0, -0.00454341, 0, -0.352717, 19.106, 0, -113.494 )
+
+[node name="Shiqi-Tree167" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.352746, 0, -0.00454341, 0, -0.352717, 19.9046, 0, -107.869 )
+
+[node name="Shiqi-Tree144" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.352746, 0, -0.00454341, 0, -0.352717, 25.9135, 0, -117.001 )
+
+[node name="Shiqi-Tree145" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.352746, 0, -0.00454341, 0, -0.352717, 48.395, 0, -118.559 )
+
+[node name="Shiqi-Tree146" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.310486, 0, -0.167417, 0, 0.352746, 0, 0.167417, 0, -0.310486, 43.9533, 0, -117.663 )
+
+[node name="Shiqi-Tree147" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.318192, 0, -0.152261, 0, 0.352746, 0, 0.152261, 0, -0.318192, 35.2849, 0, -123.146 )
+
+[node name="Shiqi-Tree148" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.318192, 0, -0.152261, 0, 0.352746, 0, 0.152261, 0, -0.318192, 67.6039, 0, -116.228 )
+
+[node name="Shiqi-Tree33" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 53.3568, 0, -79.4354 )
+
+[node name="Shiqi-Tree34" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 71.8641, 0, -29.0364 )
+
+[node name="Shiqi-Tree35" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 26.5933, 0, -70.0428 )
+
+[node name="Shiqi-Tree36" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 98.209, 0, -59.2758 )
+
+[node name="Shiqi-Tree37" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 98.209, 0, -77.3736 )
+
+[node name="Shiqi-Tree38" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 13.4471, 0, -104.177 )
+
+[node name="Shiqi-Tree165" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 20.3565, 0, -101.573 )
+
+[node name="Shiqi-Tree39" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 15.2167, 0, -25.5803 )
+
+[node name="Shiqi-Tree73" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 2.40832, 0, -12.9713 )
+
+[node name="Shiqi-Tree40" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 87.4722, 0, -82.5 )
+
+[node name="Shiqi-Tree41" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 45.446, 0, -34.428 )
+
+[node name="Shiqi-Tree42" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 45.446, 0, -89.5835 )
+
+[node name="Shiqi-Tree43" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 60.7415, 0, -14.4173 )
+
+[node name="Shiqi-Tree44" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 113.032, 0, -14.4173 )
+
+[node name="Shiqi-Tree45" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, -3.9922, 0, 4.57428 )
+
+[node name="Shiqi-Tree46" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 2.39798, 0, 1.87497 )
+
+[node name="Shiqi-Tree47" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 10.5389, 0, 4.57428 )
+
+[node name="Shiqi-Tree48" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.578855, 0, -0.163909, 0, 0.601614, 0, 0.163909, 0, 0.578855, 18.6402, 0, 4.57428 )
+
+[node name="Shiqi-Tree49" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 26.1287, 0, 3.51384 )
+
+[node name="Shiqi-Tree50" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 34.7001, 0, 5.77933 )
+
+[node name="Shiqi-Tree51" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 42.5088, 0, 2.01958 )
+
+[node name="Shiqi-Tree52" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.577843, 0, -0.167442, 0, 0.601614, 0, 0.167442, 0, 0.577843, 48.534, 0, 5.58652 )
+
+[node name="Shiqi-Tree53" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.577843, 0, -0.167442, 0, 0.601614, 0, 0.167442, 0, 0.577843, 58.9938, 0, 5.58652 )
+
+[node name="Shiqi-Tree54" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.577843, 0, -0.167442, 0, 0.601614, 0, 0.167442, 0, 0.577843, 65.4529, 0, 2.598 )
+
+[node name="Shiqi-Tree55" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.577843, 0, -0.167442, 0, 0.601614, 0, 0.167442, 0, 0.577843, 73.6954, 0, 4.14046 )
+
+[node name="Shiqi-Tree56" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.577843, 0, -0.167442, 0, 0.601614, 0, 0.167442, 0, 0.577843, 81.1185, 0, 4.14046 )
+
+[node name="Shiqi-Tree57" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.577843, 0, -0.167442, 0, 0.601614, 0, 0.167442, 0, 0.577843, 89.4093, 0, 2.01958 )
+
+[node name="Shiqi-Tree58" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.577843, 0, -0.167442, 0, 0.601614, 0, 0.167442, 0, 0.577843, 99.0497, 0, 4.23687 )
+
+[node name="Shiqi-Tree59" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.601564, 0, 0.00774886, 0, 0.601614, 0, -0.00774886, 0, -0.601564, 108.114, 0, -121.434 )
+
+[node name="Shiqi-Tree60" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.601564, 0, 0.00774886, 0, 0.601614, 0, -0.00774886, 0, -0.601564, 101.689, 0, -118.817 )
+
+[node name="Shiqi-Tree61" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.601564, 0, 0.00774886, 0, 0.601614, 0, -0.00774886, 0, -0.601564, 93.5839, 0, -121.621 )
+
+[node name="Shiqi-Tree62" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.576696, 0, 0.171351, 0, 0.601614, 0, -0.171351, 0, -0.576696, 85.4832, 0, -121.725 )
+
+[node name="Shiqi-Tree63" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.601564, 0, 0.00774886, 0, 0.601614, 0, -0.00774886, 0, -0.601564, 77.9817, 0, -120.761 )
+
+[node name="Shiqi-Tree64" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.601564, 0, 0.00774886, 0, 0.601614, 0, -0.00774886, 0, -0.601564, 69.4402, 0, -123.137 )
+
+[node name="Shiqi-Tree65" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.601564, 0, 0.00774886, 0, 0.601614, 0, -0.00774886, 0, -0.601564, 61.5837, 0, -119.478 )
+
+[node name="Shiqi-Tree66" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.575638, 0, 0.174871, 0, 0.601614, 0, -0.174871, 0, -0.575638, 55.605, 0, -123.122 )
+
+[node name="Shiqi-Tree67" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.575638, 0, 0.174871, 0, 0.601614, 0, -0.174871, 0, -0.575638, 45.146, 0, -123.257 )
+
+[node name="Shiqi-Tree68" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.575638, 0, 0.174871, 0, 0.601614, 0, -0.174871, 0, -0.575638, 38.649, 0, -120.352 )
+
+[node name="Shiqi-Tree69" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.575638, 0, 0.174871, 0, 0.601614, 0, -0.174871, 0, -0.575638, 30.427, 0, -122 )
+
+[node name="Shiqi-Tree70" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.575638, 0, 0.174871, 0, 0.601614, 0, -0.174871, 0, -0.575638, 23.0045, 0, -122.096 )
+
+[node name="Shiqi-Tree71" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.575638, 0, 0.174871, 0, 0.601614, 0, -0.174871, 0, -0.575638, 14.6871, 0, -120.082 )
+
+[node name="Shiqi-Tree72" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.575638, 0, 0.174871, 0, 0.601614, 0, -0.174871, 0, -0.575638, 5.07607, 0, -122.423 )
+
+[node name="Shiqi-TreeSMALL" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 0.0982933, 0, -123.928 )
+
+[node name="Shiqi-TreeSMALL2" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 34.463, 0, -32.9221 )
+
+[node name="Shiqi-TreeSMALL3" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 34.463, 0, -40.7906 )
+
+[node name="Shiqi-TreeSMALL12" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 46.613, 0, -43.6762 )
+
+[node name="Shiqi-TreeSMALL13" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 46.613, 0, -53.8822 )
+
+[node name="Shiqi-TreeSMALL14" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 46.127, 0, -62.5998 )
+
+[node name="Shiqi-TreeSMALL15" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 39.6571, 0, -78.2126 )
+
+[node name="Shiqi-TreeSMALL16" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 39.9001, 0, -86.0798 )
+
+[node name="Shiqi-TreeSMALL17" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 40.9329, 0, -93.6128 )
+
+[node name="Shiqi-TreeSMALL18" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 41.7834, 0, -102.77 )
+
+[node name="Shiqi-TreeSMALL21" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 39.5767, 0, -115.318 )
+
+[node name="Shiqi-TreeSMALL22" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 28.7229, 0, -115.318 )
+
+[node name="Shiqi-TreeSMALL23" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 27.363, 0, -111.725 )
+
+[node name="Shiqi-TreeSMALL38" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 18.4745, 0, -105.51 )
+
+[node name="Shiqi-TreeSMALL39" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 17.0509, 0, -110.996 )
+
+[node name="Shiqi-TreeSMALL40" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00182788, 0, -0.206559, 0, 0.206567, 0, 0.206559, 0, 0.00182788, 17.0509, 0, -99.7004 )
+
+[node name="Shiqi-TreeSMALL24" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 27.363, 0, -119.038 )
+
+[node name="Shiqi-TreeSMALL25" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 31.7541, 0, -124.269 )
+
+[node name="Shiqi-TreeSMALL26" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 36.7808, 0, -124.504 )
+
+[node name="Shiqi-TreeSMALL27" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 40.0912, 0, -122.961 )
+
+[node name="Shiqi-TreeSMALL28" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 40.0912, 0, -117.631 )
+
+[node name="Shiqi-TreeSMALL29" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 25.4399, 0, -113.098 )
+
+[node name="Shiqi-TreeSMALL19" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 46.389, 0, -112.569 )
+
+[node name="Shiqi-TreeSMALL4" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 34.0032, 0, -47.3305 )
+
+[node name="Shiqi-TreeSMALL5" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 34.5396, 0, -54.739 )
+
+[node name="Shiqi-TreeSMALL6" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 33.62, 0, -60.0782 )
+
+[node name="Shiqi-TreeSMALL7" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 31.8317, 0, -66.7203 )
+
+[node name="Shiqi-TreeSMALL8" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 23.6014, 0, -79.8217 )
+
+[node name="Shiqi-TreeSMALL9" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 22.7195, 0, -88.6819 )
+
+[node name="Shiqi-TreeSMALL10" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 23.8953, 0, -98.8438 )
+
+[node name="Shiqi-TreeSMALL11" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00260297, 0, -0.206551, 0, 0.206567, 0, 0.206551, 0, 0.00260297, 25.281, 0, -108.628 )
+
+[node name="Shiqi-Tree74" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00444497, 0, -0.352718, 0, 0.352746, 0, 0.352718, 0, 0.00444497, -5.6808, 0, -113.484 )
+
+[node name="Shiqi-Tree75" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00444497, 0, -0.352718, 0, 0.352746, 0, 0.352718, 0, 0.00444497, -5.48222, 0, -93.7707 )
+
+[node name="Shiqi-Tree76" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00444497, 0, -0.352718, 0, 0.352746, 0, 0.352718, 0, 0.00444497, -0.653107, 0, -85.4436 )
+
+[node name="Shiqi-Tree77" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00444497, 0, -0.352718, 0, 0.352746, 0, 0.352718, 0, 0.00444497, -0.440529, 0, -68.5744 )
+
+[node name="Shiqi-Tree78" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00444497, 0, -0.352718, 0, 0.352746, 0, 0.352718, 0, 0.00444497, -5.784, 0, -75.6414 )
+
+[node name="Shiqi-Tree79" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00444497, 0, -0.352718, 0, 0.352746, 0, 0.352718, 0, 0.00444497, -5.5297, 0, -63.1111 )
+
+[node name="Shiqi-Tree80" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00444497, 0, -0.352718, 0, 0.352746, 0, 0.352718, 0, 0.00444497, -6.51071, 0, -52.9756 )
+
+[node name="Shiqi-Tree81" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00444497, 0, -0.352718, 0, 0.352746, 0, 0.352718, 0, 0.00444497, 2.49281, 0, -46.1957 )
+
+[node name="Shiqi-Tree82" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00758097, 0, -0.601566, 0, 0.601614, 0, 0.601566, 0, 0.00758097, -3.96531, 0, -121.862 )
+
+[node name="Shiqi-Tree111" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00142213, 0, 0.352743, 0, 0.352746, 0, -0.352743, 0, 0.00142213, 123.658, 0, -17.0353 )
+
+[node name="Shiqi-Tree171" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00142213, 0, 0.352743, 0, 0.352746, 0, -0.352743, 0, 0.00142213, 123.658, 0, -1.9034 )
+
+[node name="Shiqi-Tree112" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00142213, 0, 0.352743, 0, 0.352746, 0, -0.352743, 0, 0.00142213, 123.738, 0, -36.7497 )
+
+[node name="Shiqi-Tree113" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00142213, 0, 0.352743, 0, 0.352746, 0, -0.352743, 0, 0.00142213, 119.048, 0, -45.1559 )
+
+[node name="Shiqi-Tree114" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00142213, 0, 0.352743, 0, 0.352746, 0, -0.352743, 0, 0.00142213, 119.116, 0, -62.0263 )
+
+[node name="Shiqi-Tree115" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00142213, 0, 0.352743, 0, 0.352746, 0, -0.352743, 0, 0.00142213, 124.341, 0, -54.8714 )
+
+[node name="Shiqi-Tree116" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00142213, 0, 0.352743, 0, 0.352746, 0, -0.352743, 0, 0.00142213, 124.295, 0, -67.4042 )
+
+[node name="Shiqi-Tree117" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00142213, 0, 0.352743, 0, 0.352746, 0, -0.352743, 0, 0.00142213, 125.444, 0, -77.522 )
+
+[node name="Shiqi-Tree118" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00242547, 0, 0.601609, 0, 0.601614, 0, -0.601609, 0, 0.00242547, 121.754, 0, -8.68747 )
+
+[node name="Shiqi-Tree119" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00242547, 0, 0.601609, 0, 0.601614, 0, -0.601609, 0, 0.00242547, 119.08, 0, -15.0885 )
+
+[node name="Shiqi-Tree120" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00242547, 0, 0.601609, 0, 0.601614, 0, -0.601609, 0, 0.00242547, 121.812, 0, -23.2184 )
+
+[node name="Shiqi-Tree121" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.166241, 0, 0.578189, 0, 0.601614, 0, -0.578189, 0, 0.166241, 121.845, 0, -31.3197 )
+
+[node name="Shiqi-Tree122" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00242547, 0, 0.601609, 0, 0.601614, 0, -0.601609, 0, 0.00242547, 120.815, 0, -38.8124 )
+
+[node name="Shiqi-Tree123" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00242547, 0, 0.601609, 0, 0.601614, 0, -0.601609, 0, 0.00242547, 123.115, 0, -47.3746 )
+
+[node name="Shiqi-Tree124" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00242547, 0, 0.601609, 0, 0.601614, 0, -0.601609, 0, 0.00242547, 119.386, 0, -55.1984 )
+
+[node name="Shiqi-Tree125" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.16977, 0, 0.577163, 0, 0.601614, 0, -0.577163, 0, 0.16977, 122.978, 0, -61.2091 )
+
+[node name="Shiqi-Tree126" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.16977, 0, 0.577163, 0, 0.601614, 0, -0.577163, 0, 0.16977, 123.02, 0, -71.6689 )
+
+[node name="Shiqi-Tree127" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.16977, 0, 0.577163, 0, 0.601614, 0, -0.577163, 0, 0.16977, 120.057, 0, -78.14 )
+
+[node name="Shiqi-Tree128" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.16977, 0, 0.577163, 0, 0.601614, 0, -0.577163, 0, 0.16977, 121.633, 0, -86.3762 )
+
+[node name="Shiqi-Tree129" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.16977, 0, 0.577163, 0, 0.601614, 0, -0.577163, 0, 0.16977, 121.663, 0, -93.7992 )
+
+[node name="Shiqi-Tree130" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.16977, 0, 0.577163, 0, 0.601614, 0, -0.577163, 0, 0.16977, 119.576, 0, -102.099 )
+
+[node name="Shiqi-Tree131" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.16977, 0, 0.577163, 0, 0.601614, 0, -0.577163, 0, 0.16977, 121.832, 0, -111.73 )
+
+[node name="Shiqi-TreeSMALL20" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.20652, 0, -0.00443058, 0, 0.206567, 0, 0.00443058, 0, -0.20652, 123.292, 0, -116.721 )
+
+[node name="Shiqi-Tree132" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.601476, 0, -0.0129038, 0, 0.601614, 0, 0.0129038, 0, -0.601476, 121.19, 0, -120.766 )
+
+[node name="Shiqi-Tree139" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.601476, 0, -0.0129038, 0, 0.601614, 0, 0.0129038, 0, -0.601476, 114.951, 0, -117.859 )
+
+[node name="Shiqi-Tree83" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00758097, 0, -0.601566, 0, 0.601614, 0, 0.601566, 0, 0.00758097, -1.18568, 0, -115.506 )
+
+[node name="Shiqi-Tree84" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00758097, 0, -0.601566, 0, 0.601614, 0, 0.601566, 0, 0.00758097, -3.7822, 0, -107.332 )
+
+[node name="Shiqi-Tree85" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.156602, 0, -0.580874, 0, 0.601614, 0, 0.580874, 0, -0.156602, -3.68012, 0, -99.2314 )
+
+[node name="Shiqi-Tree86" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00758097, 0, -0.601566, 0, 0.601614, 0, 0.601566, 0, 0.00758097, -2.5254, 0, -91.7569 )
+
+[node name="Shiqi-Tree87" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00758097, 0, -0.601566, 0, 0.601614, 0, 0.601566, 0, 0.00758097, -4.6827, 0, -83.1576 )
+
+[node name="Shiqi-Tree88" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.00758097, 0, -0.601566, 0, 0.601614, 0, 0.601566, 0, 0.00758097, -0.824852, 0, -75.3969 )
+
+[node name="Shiqi-Tree89" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.160147, 0, -0.579907, 0, 0.601614, 0, 0.579907, 0, -0.160147, -4.31558, 0, -69.3272 )
+
+[node name="Shiqi-Tree90" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.160147, 0, -0.579907, 0, 0.601614, 0, 0.579907, 0, -0.160147, -4.18378, 0, -58.8682 )
+
+[node name="Shiqi-Tree91" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.160147, 0, -0.579907, 0, 0.601614, 0, 0.579907, 0, -0.160147, -1.11411, 0, -52.4473 )
+
+[node name="Shiqi-Tree92" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.160147, 0, -0.579907, 0, 0.601614, 0, 0.579907, 0, -0.160147, -2.55258, 0, -44.186 )
+
+[node name="Shiqi-Tree93" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.160147, 0, -0.579907, 0, 0.601614, 0, 0.579907, 0, -0.160147, -2.45905, 0, -36.7635 )
+
+[node name="Shiqi-Tree94" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.160147, 0, -0.579907, 0, 0.601614, 0, 0.579907, 0, -0.160147, -0.233856, 0, -28.5001 )
+
+[node name="Shiqi-Tree98" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.160147, 0, -0.579907, 0, 0.601614, 0, 0.579907, 0, -0.160147, -0.233856, 0, -6.372 )
+
+[node name="Shiqi-Tree95" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.160147, 0, -0.579907, 0, 0.601614, 0, 0.579907, 0, -0.160147, -2.3295, 0, -18.8325 )
+
+[node name="Shiqi-Tree133" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.297195, 0, -0.190013, 0, 0.352746, 0, 0.190013, 0, 0.297195, 116.451, 0, -8.25614 )
+
+[node name="Shiqi-Tree134" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.297195, 0, -0.190013, 0, 0.352746, 0, 0.190013, 0, 0.297195, 98.0815, 0, -13.7075 )
+
+[node name="Shiqi-Tree135" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.395209, 0, -0.453596, 0, 0.601614, 0, 0.453596, 0, 0.395209, 99.5062, 0, -6.48486 )
+
+[node name="Shiqi-Tree136" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.396648, 0, -0.452338, 0, 0.601614, 0, 0.452338, 0, 0.396648, 107.417, 0, -1.13601 )
+
+[node name="Shiqi-Tree137" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.396648, 0, -0.452338, 0, 0.601614, 0, 0.452338, 0, 0.396648, 113.458, 0, 0.683841 )
+
+[node name="Shiqi-Tree138" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.396648, 0, -0.452338, 0, 0.601614, 0, 0.452338, 0, 0.396648, 120.877, 0, 3.26451 )
+
+[node name="Shiqi-Tree149" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.0770152, 0, 0.344236, 0, 0.352746, 0, -0.344236, 0, 0.0770152, 50.8503, 0, -87.7808 )
+
+[node name="Shiqi-Tree150" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.0770152, 0, 0.344236, 0, 0.352746, 0, -0.344236, 0, 0.0770152, 52.7776, 0, -97.7038 )
+
+[node name="Shiqi-Tree151" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.0770152, 0, 0.344236, 0, 0.352746, 0, -0.344236, 0, 0.0770152, 46.9449, 0, -106.09 )
+
+[node name="Shiqi-Tree152" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.0770152, 0, 0.344236, 0, 0.352746, 0, -0.344236, 0, 0.0770152, 48.3538, 0, -112.328 )
+
+[node name="Shiqi-Tree153" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.0770152, 0, 0.344236, 0, 0.352746, 0, -0.344236, 0, 0.0770152, 45.2536, 0, -90.0067 )
+
+[node name="Shiqi-Tree154" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.0999551, 0, 0.338288, 0, 0.352746, 0, -0.338288, 0, -0.0999551, 45.2905, 0, -94.5378 )
+
+[node name="Shiqi-Tree155" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.0835378, 0, 0.342711, 0, 0.352746, 0, -0.342711, 0, -0.0835378, 52.4389, 0, -101.893 )
+
+[node name="Shiqi-Tree156" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.289563, 0, 0.527345, 0, 0.601614, 0, -0.527345, 0, 0.289563, 50.5191, 0, -92.2197 )
+
+[node name="Shiqi-Tree157" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.289563, 0, 0.527345, 0, 0.601614, 0, -0.527345, 0, 0.289563, 49.0129, 0, -99.1754 )
+
+[node name="Shiqi-Tree158" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.289563, 0, 0.527345, 0, 0.601614, 0, -0.527345, 0, 0.289563, 52.3177, 0, -106.882 )
+
+[node name="Shiqi-Tree159" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.289563, 0, 0.527345, 0, 0.601614, 0, -0.527345, 0, 0.289563, 53.9384, 0, -114.126 )
+
+[node name="Shiqi-TreeSMALL30" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.202667, 0, 0.0399491, 0, 0.206567, 0, -0.0399491, 0, -0.202667, 50.0494, 0, -110.49 )
+
+[node name="Shiqi-TreeSMALL31" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.202667, 0, 0.0399491, 0, 0.206567, 0, -0.0399491, 0, -0.202667, 54.2648, 0, -105.117 )
+
+[node name="Shiqi-TreeSMALL32" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.202667, 0, 0.0399491, 0, 0.206567, 0, -0.0399491, 0, -0.202667, 53.4603, 0, -100.149 )
+
+[node name="Shiqi-TreeSMALL33" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.202667, 0, 0.0399491, 0, 0.206567, 0, -0.0399491, 0, -0.202667, 51.2698, 0, -97.2272 )
+
+[node name="Shiqi-TreeSMALL34" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.202667, 0, 0.0399491, 0, 0.206567, 0, -0.0399491, 0, -0.202667, 46.0532, 0, -98.3239 )
+
+[node name="Shiqi-Tree160" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.35262, 0, -0.00941841, 0, 0.352746, 0, 0.00941841, 0, 0.35262, 36.0211, 0, -113.559 )
+
+[node name="Shiqi-Tree161" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.35262, 0, -0.00941841, 0, 0.352746, 0, 0.00941841, 0, 0.35262, 37.866, 0, -107.519 )
+
+[node name="Shiqi-Tree162" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.35262, 0, -0.00941841, 0, 0.352746, 0, 0.00941841, 0, 0.35262, 28.4094, 0, -106.915 )
+
+[node name="Shiqi-Tree163" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.31277, 0, 0.163109, 0, 0.352746, 0, -0.163109, 0, 0.31277, 33.9195, 0, -109.931 )
+
+[node name="Shiqi-TreeSMALL35" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.000252334, 0, 0.206567, 0, 0.206567, 0, -0.206567, 0, 0.000252334, 31.8289, 0, -112.216 )
+
+[node name="Shiqi-TreeSMALL36" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.000252334, 0, 0.206567, 0, 0.206567, 0, -0.206567, 0, 0.000252334, 42.6817, 0, -112.066 )
+
+[node name="Shiqi-TreeSMALL37" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.000252334, 0, 0.206567, 0, 0.206567, 0, -0.206567, 0, 0.000252334, 31.2825, 0, -109.91 )
+
+[node name="Shiqi-Tree172" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.541459, 0, -0.00697406, 0, -0.541415, 70.7813, 0, -17.9324 )
+
+[node name="Shiqi-Tree174" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.611253, 0, -0.00787301, 0, -0.611203, 97.6225, 0, -25.3186 )
+visible = false
+
+[node name="Shiqi-Tree175" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.611253, 0, -0.00787301, 0, -0.611203, 103.72, -0.314318, -43.8452 )
+
+[node name="Shiqi-Tree176" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( -0.352717, 0, 0.00454341, 0, 0.541459, 0, -0.00697406, 0, -0.541415, 85.8915, 0, -43.0798 )
+
+[node name="Shiqi-Tree173" parent="Environment/Tree\'s" instance=ExtResource( 13 )]
+transform = Transform( 0.601614, 0, 0, 0, 0.601614, 0, 0, 0, 0.601614, 80.5502, 0, -22.2276 )
+
+[node name="Ground" type="Spatial" parent="Environment"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0343432, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground2" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0343432, 0, -16.748 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground3" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0343432, 0, -33.4727 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground4" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0343432, 0, -50.2052 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground5" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7741, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground6" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7741, 0, -16.748 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground7" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7741, 0, -33.4727 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground8" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7741, 0, -50.2052 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground9" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.5192, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground10" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.5192, 0, -16.748 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground11" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.5192, 0, -33.4727 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground12" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.5192, 0, -50.2052 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground13" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 50.2566, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground14" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 50.2566, 0, -16.748 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground15" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 50.2566, 0, -33.4727 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground16" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 50.2566, 0, -50.2052 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground17" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0343432, 0, -66.4894 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground18" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0343432, 0, -83.2375 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground19" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0343432, 0, -99.9622 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground20" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0343432, 0, -116.695 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground21" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7741, 0, -66.4894 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground22" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7741, 0, -83.2375 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground23" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7741, 0, -99.9622 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground24" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7741, 0, -116.695 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground25" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.5192, 0, -66.4894 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground26" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.5192, 0, -83.2375 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground27" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.5192, 0, -99.9622 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground28" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.5192, 0, -116.695 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground29" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 50.2566, 0, -66.4894 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground30" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 50.2566, 0, -83.2375 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground31" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 50.2566, 0, -99.9622 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground32" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 50.2566, 0, -116.695 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground33" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.8066, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground34" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.8066, 0, -16.748 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground35" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.8066, 0, -33.4727 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground36" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.8066, 0, -50.2052 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground37" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 83.5464, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground38" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 83.5464, 0, -16.748 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground39" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 83.5464, 0, -33.4727 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground40" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 83.5464, 0, -50.2052 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground41" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 100.292, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground42" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 100.292, 0, -16.748 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground43" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 100.292, 0, -33.4727 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground44" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 100.292, 0, -50.2052 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground45" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 117.029, 0, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground46" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 117.029, 0, -16.748 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground47" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 117.029, 0, -33.4727 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground48" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 117.029, 0, -50.2052 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground49" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.8066, 0, -66.4894 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground50" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.8066, 0, -83.2375 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground51" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.8066, 0, -99.9622 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground52" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.8066, 0, -116.695 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground53" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 83.5464, 0, -66.4894 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground54" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 83.5464, 0, -83.2375 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground55" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 83.5464, 0, -99.9622 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground56" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 83.5464, 0, -116.695 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground57" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 100.292, 0, -66.4894 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground58" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 100.292, 0, -83.2375 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground59" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 100.292, 0, -99.9622 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground60" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 100.292, 0, -116.695 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground61" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 117.029, 0, -66.4894 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground62" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 117.029, 0, -83.2375 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground63" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 117.029, 0, -99.9622 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ground64" parent="Environment/Ground" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 117.029, 0, -116.695 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="InsideFloor" type="StaticBody" parent="Environment/Ground"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="MeshInstance" type="MeshInstance" parent="Environment/Ground/InsideFloor"]
+transform = Transform( 2.64105, 0, 0, 0, 1.11544, 0, 0, 0, 2.03549, 39.1719, 0.0536929, -21.4223 )
+mesh = SubResource( 14 )
+material/0 = ExtResource( 15 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Environment/Ground/InsideFloor"]
+transform = Transform( 3.73832, 0, 0, 0, 0.266385, 0, 0, 0, 2.8666, 39.1704, 0, -21.4663 )
+shape = SubResource( 15 )
+
+[node name="Bushes" type="Spatial" parent="Environment"]
+
+[node name="ShiqiBushes-1" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 35.0969, 0, -26.5418 )
+
+[node name="ShiqiBushes-71" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 35.0969, 0, -3.41396 )
+
+[node name="ShiqiBushes-72" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 80.4213, 0, -3.41396 )
+
+[node name="ShiqiBushes-73" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 80.4213, 0, -40.571 )
+
+[node name="ShiqiBushes-74" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 27.6193, 0, -40.571 )
+
+[node name="ShiqiBushes-75" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 15.7633, 0, -42.5266 )
+
+[node name="ShiqiBushes-76" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 27.1596, -0.325488, -19.8303 )
+
+[node name="ShiqiBushes-77" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 25.7859, 0, -57.9272 )
+
+[node name="ShiqiBushes-78" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 5.86286, 0, -57.9272 )
+
+[node name="ShiqiBushes-79" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 5.86286, 0, -81.8837 )
+
+[node name="ShiqiBushes-80" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 19.1856, 0, -86.0394 )
+
+[node name="ShiqiBushes-81" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 14.0521, 0, -86.0394 )
+
+[node name="ShiqiBushes-82" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 14.0521, 0, -79.3169 )
+
+[node name="ShiqiBushes-83" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 23.183, 0, -95.4509 )
+
+[node name="ShiqiBushes-84" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 17.4744, 0, -112.44 )
+
+[node name="ShiqiBushes-85" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 6.10732, 0, -110.485 )
+
+[node name="ShiqiBushes-86" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 6.10732, 0, -94.8624 )
+
+[node name="ShiqiBushes-87" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 53.546, 0, -111.877 )
+
+[node name="ShiqiBushes-88" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 57.7367, 0, -92.9347 )
+
+[node name="ShiqiBushes-89" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 54.3003, 0, -68.7124 )
+
+[node name="ShiqiBushes-90" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 57.4014, 0, -50.8601 )
+
+[node name="ShiqiBushes-91" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 54.4702, 0, -39.2628 )
+
+[node name="ShiqiBushes-92" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 54.4702, 0, -21.0384 )
+
+[node name="ShiqiBushes-93" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 91.3012, 0, -20.3503 )
+
+[node name="ShiqiBushes-94" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 91.3012, 0, -34.6748 )
+
+[node name="ShiqiBushes-95" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 113.731, 0, -34.6748 )
+
+[node name="ShiqiBushes-96" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 113.731, 0, -43.8507 )
+
+[node name="ShiqiBushes-97" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 102.006, 0, -52.2619 )
+
+[node name="ShiqiBushes-98" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 82.1254, 0, -67.81 )
+
+[node name="ShiqiBushes-99" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 104.173, 0, -79.7896 )
+
+[node name="ShiqiBushes-100" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 104.173, 0, -97.7591 )
+
+[node name="ShiqiBushes-101" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 89.8994, 0, -98.1414 )
+
+[node name="ShiqiBushes-102" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 73.8416, 0, -98.1414 )
+
+[node name="ShiqiBushes-103" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 73.8416, 0, -110.503 )
+
+[node name="ShiqiBushes-104" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 65.2573, 0, -81.5053 )
+
+[node name="ShiqiBushes-105" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 57.4059, 0, -71.5602 )
+
+[node name="ShiqiBushes-106" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.364181, 0, 0, 0, 0.364181, 0, 0, 0, 0.364181, 53.1137, 0, -60.3588 )
+
+[node name="ShiqiBushes-4" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.283106, 0, 0, 0, 0.283106, 0, 0, 0, 0.283106, 35.0969, 0, -39.4676 )
+
+[node name="ShiqiBushes-5" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.283106, 0, 0, 0, 0.283106, 0, 0, 0, 0.283106, 46.1157, 0, -51.5643 )
+
+[node name="ShiqiBushes-6" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.283106, 0, 0, 0, 0.283106, 0, 0, 0, 0.283106, 32.941, 0, -61.4452 )
+
+[node name="ShiqiBushes-7" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.283106, 0, 0, 0, 0.283106, 0, 0, 0, 0.283106, 43.3909, 0, -68.7811 )
+
+[node name="ShiqiBushes-8" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.283106, 0, 0, 0, 0.283106, 0, 0, 0, 0.283106, 31.452, 0, -68.0317 )
+
+[node name="ShiqiBushes-9" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.283106, 0, 0, 0, 0.283106, 0, 0, 0, 0.283106, 25.4255, 0, -82.1054 )
+
+[node name="ShiqiBushes-10" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.283106, 0, 0, 0, 0.283106, 0, 0, 0, 0.283106, 24.1979, 0, -82.1953 )
+
+[node name="ShiqiBushes-11" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.283106, 0, 0, 0, 0.283106, 0, 0, 0, 0.283106, 39.9176, 0, -92.4655 )
+
+[node name="ShiqiBushes-12" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.283106, 0, 0, 0, 0.283106, 0, 0, 0, 0.283106, 24.0781, 0, -102.376 )
+
+[node name="ShiqiBushes-2" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 43.3957, 0, -27.1273 )
+
+[node name="ShiqiBushes-13" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 34.3517, 0, -34.155 )
+
+[node name="ShiqiBushes-14" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 31.4496, 0, -45.4556 )
+
+[node name="ShiqiBushes-15" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 48.8175, 0, -43.329 )
+
+[node name="ShiqiBushes-16" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 46.3694, 0, -38.606 )
+
+[node name="ShiqiBushes-17" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 34.1044, 0, -50.7473 )
+
+[node name="ShiqiBushes-18" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 32.7938, 0, -49.8324 )
+
+[node name="ShiqiBushes-19" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 32.7938, 0, -56.1627 )
+
+[node name="ShiqiBushes-20" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 49.0153, 0, -57.3249 )
+
+[node name="ShiqiBushes-107" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 16.4475, 0, -57.3249 )
+
+[node name="ShiqiBushes-108" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 16.4475, 0, -16.0536 )
+
+[node name="ShiqiBushes-109" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 8.30551, 0, -23.4937 )
+
+[node name="ShiqiBushes-110" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 8.30551, 0, -64.4842 )
+
+[node name="ShiqiBushes-111" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 106.009, 0, -64.4842 )
+
+[node name="ShiqiBushes-112" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 106.009, 0, -14.6498 )
+
+[node name="ShiqiBushes-113" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 86.356, 0, -14.6498 )
+
+[node name="ShiqiBushes-114" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 86.356, 0, -55.9211 )
+
+[node name="ShiqiBushes-115" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 106.149, 0, -85.9622 )
+
+[node name="ShiqiBushes-116" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 106.149, 0, -30.5156 )
+
+[node name="ShiqiBushes-117" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 51.1442, 0, -30.5156 )
+
+[node name="ShiqiBushes-118" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 51.1442, 0, -46.4962 )
+
+[node name="ShiqiBushes-119" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 48.4072, 0, -66.185 )
+
+[node name="ShiqiBushes-120" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 48.4072, 0, -66.185 )
+
+[node name="ShiqiBushes-121" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 48.4072, 0, -78.3691 )
+
+[node name="ShiqiBushes-122" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 52.2282, 0, -89.5821 )
+
+[node name="ShiqiBushes-123" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 46.3961, 0, -102.01 )
+
+[node name="ShiqiBushes-124" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 61.9894, 0, -105.816 )
+
+[node name="ShiqiBushes-125" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 71.1447, 0, -69.0425 )
+
+[node name="ShiqiBushes-126" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 75.2041, 0, -86.6622 )
+
+[node name="ShiqiBushes-127" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 98.0237, 0, -45.1176 )
+
+[node name="ShiqiBushes-128" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 7.87399, 0, -36.1418 )
+
+[node name="ShiqiBushes-129" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 19.7543, 0, -26.814 )
+
+[node name="ShiqiBushes-130" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 19.7543, 0, -23.9778 )
+
+[node name="ShiqiBushes-131" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 17.5484, 0, -22.3077 )
+
+[node name="ShiqiBushes-132" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 32.769, 0, -22.3077 )
+
+[node name="ShiqiBushes-133" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 21.1093, 0, -38.9149 )
+
+[node name="ShiqiBushes-134" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 21.1093, 0, -47.7069 )
+
+[node name="ShiqiBushes-135" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 21.1093, 0, -64.6608 )
+
+[node name="ShiqiBushes-136" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.267108, 0, -0.081867, 0, 0.279372, 0, 0.081867, 0, 0.267108, 22.2753, 0, -65.3225 )
+
+[node name="ShiqiBushes-137" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.267108, 0, -0.081867, 0, 0.279372, 0, 0.081867, 0, 0.267108, 4.65969, 0, -65.3225 )
+
+[node name="ShiqiBushes-138" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.267108, 0, -0.081867, 0, 0.279372, 0, 0.081867, 0, 0.267108, 3.61977, 0, -77.2028 )
+
+[node name="ShiqiBushes-139" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.267108, 0, -0.081867, 0, 0.279372, 0, 0.081867, 0, 0.267108, 1.59283, 0, -93.7645 )
+
+[node name="ShiqiBushes-140" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.267108, 0, -0.081867, 0, 0.279372, 0, 0.081867, 0, 0.267108, 7.16731, 0, -94.3634 )
+
+[node name="ShiqiBushes-141" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.267108, 0, -0.081867, 0, 0.279372, 0, 0.081867, 0, 0.267108, 12.0738, 0, -100.583 )
+
+[node name="ShiqiBushes-142" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.267108, 0, -0.081867, 0, 0.279372, 0, 0.081867, 0, 0.267108, 0.694464, 0, -105.95 )
+
+[node name="ShiqiBushes-21" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 29.5495, 0, -66.2201 )
+
+[node name="ShiqiBushes-22" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 41.9174, 0, -73.5007 )
+
+[node name="ShiqiBushes-23" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 40.8512, 0, -73.9272 )
+
+[node name="ShiqiBushes-24" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 41.2777, 0, -78.588 )
+
+[node name="ShiqiBushes-25" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 21.9033, 0, -78.588 )
+
+[node name="ShiqiBushes-26" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 24.0357, 0, -90.0116 )
+
+[node name="ShiqiBushes-27" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 41.2473, 0, -86.5998 )
+
+[node name="ShiqiBushes-28" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 40.638, 0, -87.6964 )
+
+[node name="ShiqiBushes-29" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 42.0698, 0, -96.0433 )
+
+[node name="ShiqiBushes-30" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 41.6128, 0, -97.1704 )
+
+[node name="ShiqiBushes-31" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 21.8424, 0, -97.1704 )
+
+[node name="ShiqiBushes-32" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 23, 0, -109.142 )
+
+[node name="ShiqiBushes-144" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 23, 0, -118.194 )
+
+[node name="ShiqiBushes-145" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 29.274, 0, -120.051 )
+
+[node name="ShiqiBushes-146" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 26.4887, 0, -124.388 )
+
+[node name="ShiqiBushes-147" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 33.3421, 0, -124.388 )
+
+[node name="ShiqiBushes-148" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 33.3421, 0, -120.992 )
+
+[node name="ShiqiBushes-149" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 36.9459, 0, -120.992 )
+
+[node name="ShiqiBushes-150" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 36.9459, 0, -117.522 )
+
+[node name="ShiqiBushes-151" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 42.3334, 0, -115.433 )
+
+[node name="ShiqiBushes-33" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( 0.279372, 0, 0, 0, 0.279372, 0, 0, 0, 0.279372, 42.679, 0, -106.979 )
+
+[node name="ShiqiBushes-3" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 43.1672, 0.00373435, -26.3731 )
+
+[node name="ShiqiBushes-34" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 43.1672, 0.00373435, -31.2597 )
+
+[node name="ShiqiBushes-35" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 35.3159, 0.00373435, -36.5349 )
+
+[node name="ShiqiBushes-36" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 35.0296, 0.00373435, -37.2709 )
+
+[node name="ShiqiBushes-37" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 35.0296, 0.00373435, -38.5795 )
+
+[node name="ShiqiBushes-38" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 46.2546, 0.00373435, -40.1743 )
+
+[node name="ShiqiBushes-39" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 45.7434, 0.00373435, -41.9735 )
+
+[node name="ShiqiBushes-40" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 37.2557, 0.00373435, -42.4029 )
+
+[node name="ShiqiBushes-41" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 34.6721, 0.00373435, -41.8301 )
+
+[node name="ShiqiBushes-42" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 48.8263, 0.00373435, -47.02 )
+
+[node name="ShiqiBushes-43" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 48.218, 0.00373435, -55.0045 )
+
+[node name="ShiqiBushes-44" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 34.5642, 0.00373435, -58.094 )
+
+[node name="ShiqiBushes-45" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 46.0825, 0.00373435, -59.215 )
+
+[node name="ShiqiBushes-46" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 46.0825, 0.00373435, -60.5056 )
+
+[node name="ShiqiBushes-47" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 35.6747, 0.00373435, -60.5056 )
+
+[node name="ShiqiBushes-48" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 33.4218, 0.00373435, -63.1392 )
+
+[node name="ShiqiBushes-49" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 44.7815, 0.00373435, -63.9325 )
+
+[node name="ShiqiBushes-50" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 31.3911, 0.00373435, -65.0431 )
+
+[node name="ShiqiBushes-51" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 44.6546, 0.00373435, -65.1383 )
+
+[node name="ShiqiBushes-52" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 40.4026, 0.00373435, -76.6248 )
+
+[node name="ShiqiBushes-53" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 27.6292, 0.00373435, -76.6248 )
+
+[node name="ShiqiBushes-54" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 39.1969, 0.00373435, -73.1979 )
+
+[node name="ShiqiBushes-55" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 28.9325, 0.00373435, -74.1647 )
+
+[node name="ShiqiBushes-56" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 25.9968, 0.00373435, -80.5277 )
+
+[node name="ShiqiBushes-57" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 38.8161, 0.00373435, -80.5277 )
+
+[node name="ShiqiBushes-58" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 39.2603, 0.00373435, -82.5585 )
+
+[node name="ShiqiBushes-59" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 38.4353, 0.00373435, -84.7479 )
+
+[node name="ShiqiBushes-60" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 40.7774, 0.00373435, -89.8566 )
+
+[node name="ShiqiBushes-61" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 24.918, 0.00373435, -94.8701 )
+
+[node name="ShiqiBushes-62" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 26.0603, 0.00373435, -96.1076 )
+
+[node name="ShiqiBushes-63" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 24.9815, 0.00373435, -99.598 )
+
+[node name="ShiqiBushes-64" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 40.0536, 0.00373435, -98.5191 )
+
+[node name="ShiqiBushes-65" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 40.4978, 0.00373435, -101.978 )
+
+[node name="ShiqiBushes-66" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 24.6959, 0.00373435, -101.978 )
+
+[node name="ShiqiBushes-67" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 24.6959, 0.00373435, -110.926 )
+
+[node name="ShiqiBushes-68" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 26.8536, 0.00373435, -109.593 )
+
+[node name="ShiqiBushes-69" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 42.37, 0.00373435, -109.593 )
+
+[node name="ShiqiBushes-70" parent="Environment/Bushes" instance=ExtResource( 4 )]
+transform = Transform( 0.229665, 0, 0, 0, 0.229665, 0, 0, 0, 0.229665, 41.5767, 0.00373435, -105.468 )
+
+[node name="ShiqiBushes-143" parent="Environment/Bushes" instance=ExtResource( 7 )]
+transform = Transform( 0.306829, 0, -0.196173, 0, 0.364181, 0, 0.196173, 0, 0.306829, 106.726, 0, -11.1292 )
+
+[node name="ShiqiBushes-152" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( -0.0574789, 0, -0.273395, 0, 0.279372, 0, 0.273395, 0, -0.0574789, 50.1209, 0, -114.934 )
+
+[node name="ShiqiBushes-153" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( -0.0574789, 0, -0.273395, 0, 0.279372, 0, 0.273395, 0, -0.0574789, 50.6472, 0, -108.412 )
+
+[node name="ShiqiBushes-154" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( -0.0574789, 0, -0.273395, 0, 0.279372, 0, 0.273395, 0, -0.0574789, 55.4643, 0, -110.245 )
+
+[node name="ShiqiBushes-155" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( -0.0574789, 0, -0.273395, 0, 0.279372, 0, 0.273395, 0, -0.0574789, 54.0543, 0, -103.538 )
+
+[node name="ShiqiBushes-156" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( -0.0574789, 0, -0.273395, 0, 0.279372, 0, 0.273395, 0, -0.0574789, 50.7308, 0, -104.237 )
+
+[node name="ShiqiBushes-157" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( -0.0574789, 0, -0.273395, 0, 0.279372, 0, 0.273395, 0, -0.0574789, 49.9893, 0, -100.71 )
+
+[node name="ShiqiBushes-158" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( -0.0574789, 0, -0.273395, 0, 0.279372, 0, 0.273395, 0, -0.0574789, 46.5941, 0, -101.424 )
+
+[node name="ShiqiBushes-159" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( -0.279345, 0, 0.00386162, 0, 0.279372, 0, -0.00386162, 0, -0.279345, 48.3643, 0, -109.111 )
+
+[node name="ShiqiBushes-160" parent="Environment/Bushes" instance=ExtResource( 3 )]
+transform = Transform( -0.279345, 0, 0.00386162, 0, 0.279372, 0, -0.00386162, 0, -0.279345, 29.0709, 0, -112.139 )
+
+[node name="Flowers" type="Spatial" parent="Environment"]
+
+[node name="Flower 1" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.368618, 0, 0.180752, 0, 0.410549, 0, -0.180752, 0, 0.368618, 35.9243, -0.0904897, -26.9068 )
+
+[node name="Flower 5" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.00161223, 0, 0.410546, 0, 0.410549, 0, -0.410546, 0, -0.00161223, 35.0449, -0.0904897, -31.8778 )
+
+[node name="Flower 6" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.00161223, 0, 0.410546, 0, 0.410549, 0, -0.410546, 0, -0.00161223, 34.8982, -0.0904897, -35.2547 )
+
+[node name="Flower 7" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.339247, 0, 0.231219, 0, 0.410549, 0, -0.231219, 0, 0.339247, 36.2136, -0.0904897, -42.4231 )
+
+[node name="Flower 8" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.339247, 0, 0.231219, 0, 0.410549, 0, -0.231219, 0, 0.339247, 46.4198, -0.0904897, -42.3083 )
+
+[node name="Flower 9" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.0243697, 0, -0.409825, 0, 0.410549, 0, 0.409825, 0, 0.0243697, 46.5851, -0.0904897, -41.6964 )
+
+[node name="Flower 10" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.0243697, 0, -0.409825, 0, 0.410549, 0, 0.409825, 0, 0.0243697, 45.2734, -0.0904897, -42.4667 )
+
+[node name="Flower 11" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.0243697, 0, -0.409825, 0, 0.410549, 0, 0.409825, 0, 0.0243697, 45.7278, -0.0904897, -48.4498 )
+
+[node name="Flower 12" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.177548, 0, -0.370172, 0, 0.410549, 0, 0.370172, 0, -0.177548, 46.0515, -0.0904897, -47.3687 )
+
+[node name="Flower 13" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.177548, 0, -0.370172, 0, 0.410549, 0, 0.370172, 0, -0.177548, 43.4809, -0.0904897, -47.9092 )
+
+[node name="Flower 14" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.177548, 0, -0.370172, 0, 0.410549, 0, 0.370172, 0, -0.177548, 34.0767, -0.0904897, -49.95 )
+
+[node name="Flower 15" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.177548, 0, -0.370172, 0, 0.410549, 0, 0.370172, 0, -0.177548, 46.8976, -0.0904897, -57.4155 )
+
+[node name="Flower 16" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.0540351, 0, -0.406978, 0, 0.410549, 0, 0.406978, 0, 0.0540351, 44.3177, -0.0904897, -55.7461 )
+
+[node name="Flower 17" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.249267, 0, -0.326216, 0, 0.410549, 0, 0.326216, 0, -0.249267, 44.4077, -0.0904897, -56.528 )
+
+[node name="Flower 18" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.249267, 0, -0.326216, 0, 0.410549, 0, 0.326216, 0, -0.249267, 34.7622, -0.0904897, -60.8751 )
+
+[node name="Flower 19" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.249267, 0, -0.326216, 0, 0.410549, 0, 0.326216, 0, -0.249267, 35.287, -0.0904897, -59.2577 )
+
+[node name="Flower 20" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.249267, 0, -0.326216, 0, 0.410549, 0, 0.326216, 0, -0.249267, 36.1332, -0.0904897, -64.5168 )
+
+[node name="Flower 21" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.249267, 0, -0.326216, 0, 0.410549, 0, 0.326216, 0, -0.249267, 30.0494, -0.0904897, -65.1915 )
+
+[node name="Flower 22" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.169724, 0, -0.373824, 0, 0.410549, 0, 0.373824, 0, -0.169724, 32.2237, -0.0904897, -65.1915 )
+
+[node name="Flower 23" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.169724, 0, -0.373824, 0, 0.410549, 0, 0.373824, 0, -0.169724, 26.5118, -0.0904897, -73.8981 )
+
+[node name="Flower 24" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.169724, 0, -0.373824, 0, 0.410549, 0, 0.373824, 0, -0.169724, 26.5118, -0.0904897, -83.0023 )
+
+[node name="Flower 25" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.197551, 0, -0.359895, 0, 0.410549, 0, 0.359895, 0, 0.197551, 26.5118, -0.0904897, -81.938 )
+
+[node name="Flower 26" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.197551, 0, -0.359895, 0, 0.410549, 0, 0.359895, 0, 0.197551, 22.9641, -0.0904897, -81.7077 )
+
+[node name="Flower 27" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.197551, 0, -0.359895, 0, 0.410549, 0, 0.359895, 0, 0.197551, 38.015, -0.0904897, -86.0226 )
+
+[node name="Flower 28" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.102502, 0, -0.397548, 0, 0.410549, 0, 0.397548, 0, -0.102502, 38.015, -0.0904897, -86.9086 )
+
+[node name="Flower 29" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.405308, 0, -0.0653917, 0, 0.410549, 0, 0.0653917, 0, -0.405308, 38.5788, -0.0904897, -86.3138 )
+
+[node name="Flower 129" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.197551, 0, -0.359895, 0, 0.410549, 0, 0.359895, 0, 0.197551, 38.391, -0.0904897, -116.483 )
+
+[node name="Flower 130" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.102502, 0, -0.397548, 0, 0.410549, 0, 0.397548, 0, -0.102502, 38.391, -0.0904897, -117.369 )
+
+[node name="Flower 131" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.405308, 0, -0.0653917, 0, 0.410549, 0, 0.0653917, 0, -0.405308, 38.9549, -0.0904897, -116.774 )
+
+[node name="Flower 132" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.197551, 0, -0.359895, 0, 0.410549, 0, 0.359895, 0, 0.197551, 34.112, -0.0904897, -117.994 )
+
+[node name="Flower 133" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.102502, 0, -0.397548, 0, 0.410549, 0, 0.397548, 0, -0.102502, 34.112, -0.0904897, -118.88 )
+
+[node name="Flower 134" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.405308, 0, -0.0653917, 0, 0.410549, 0, 0.0653917, 0, -0.405308, 34.6759, -0.0904897, -118.285 )
+
+[node name="Flower 135" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.197551, 0, -0.359895, 0, 0.410549, 0, 0.359895, 0, 0.197551, 28.4292, -0.0904897, -112.948 )
+
+[node name="Flower 136" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.102502, 0, -0.397548, 0, 0.410549, 0, 0.397548, 0, -0.102502, 28.4292, -0.0904897, -113.834 )
+
+[node name="Flower 137" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.405308, 0, -0.0653917, 0, 0.410549, 0, 0.0653917, 0, -0.405308, 28.993, -0.0904897, -113.239 )
+
+[node name="Flower 30" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.405308, 0, -0.0653917, 0, 0.410549, 0, 0.0653917, 0, -0.405308, 37.4126, -0.0904897, -89.2872 )
+
+[node name="Flower 31" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.405308, 0, -0.0653917, 0, 0.410549, 0, 0.0653917, 0, -0.405308, 24.4734, -0.0904897, -88.2586 )
+
+[node name="Flower 32" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.36152, 0, -0.194561, 0, 0.410549, 0, 0.194561, 0, -0.36152, 28.2001, -0.0904897, -99.3788 )
+
+[node name="Flower 2" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.10858, 0, -0.528351, 0, 0.539393, 0, 0.528351, 0, -0.10858, 42.2862, -0.0614634, -27.1745 )
+
+[node name="Flower 33" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.10858, 0, -0.528351, 0, 0.539393, 0, 0.528351, 0, -0.10858, 35.893, -0.0614634, -37.6637 )
+
+[node name="Flower 34" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.10858, 0, -0.528351, 0, 0.539393, 0, 0.528351, 0, -0.10858, 44.7736, -0.0614634, -40.4963 )
+
+[node name="Flower 35" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.10858, 0, -0.528351, 0, 0.539393, 0, 0.528351, 0, -0.10858, 44.6617, -0.0614634, -44.8855 )
+
+[node name="Flower 37" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.284495, 0, -0.331258, 0, 0.436657, 0, 0.331258, 0, -0.284495, 45.1982, -0.0614634, -45.5113 )
+
+[node name="Flower 38" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.284495, 0, -0.331258, 0, 0.436657, 0, 0.331258, 0, -0.284495, 27.9957, -0.0614634, -49.2305 )
+
+[node name="Flower 39" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.205572, 0, -0.239362, 0, 0.315522, 0, 0.239362, 0, -0.205572, 45.7502, -0.0614634, -52.5934 )
+
+[node name="Flower 40" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.205572, 0, -0.239362, 0, 0.315522, 0, 0.239362, 0, -0.205572, 33.866, -0.0614634, -52.5934 )
+
+[node name="Flower 41" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.205572, 0, -0.239362, 0, 0.315522, 0, 0.239362, 0, -0.205572, 33.866, -0.0614634, -58.9919 )
+
+[node name="Flower 42" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.205572, 0, -0.239362, 0, 0.315522, 0, 0.239362, 0, -0.205572, 46.7601, -0.0614634, -58.9919 )
+
+[node name="Flower 43" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.205572, 0, -0.239362, 0, 0.315522, 0, 0.239362, 0, -0.205572, 46.7601, -0.0614634, -64.4994 )
+
+[node name="Flower 44" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.107366, 0, -0.296693, 0, 0.315522, 0, 0.296693, 0, -0.107366, 46.1931, -0.0614634, -64.8233 )
+
+[node name="Flower 45" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.146333, 0, -0.404374, 0, 0.430037, 0, 0.404374, 0, -0.146333, 32.5285, -0.0614634, -62.4293 )
+
+[node name="Flower 36" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.0781596, 0, -0.380326, 0, 0.388274, 0, 0.380326, 0, -0.0781596, 45.6214, -0.0614634, -44.8855 )
+
+[node name="Flower 3" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.438918, 0, 0, 0, 0.438918, 0, 0, 0, 0.438918, 44.8513, -0.0614634, -32.6521 )
+
+[node name="Flower 4" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.438918, 0, 0, 0, 0.438918, 0, 0, 0, 0.438918, 45.569, -0.0614634, -32.8362 )
+
+[node name="Flower 46" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.438918, 0, 0, 0, 0.438918, 0, 0, 0, 0.438918, 34.4677, -0.0614634, -31.256 )
+
+[node name="Flower 47" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.438918, 0, 0, 0, 0.438918, 0, 0, 0, 0.438918, 34.8416, -0.0614634, -30.8821 )
+
+[node name="Flower 48" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.438918, 0, 0, 0, 0.438918, 0, 0, 0, 0.438918, 25.9776, -0.0614634, -28.8215 )
+
+[node name="Flower 49" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.438918, 0, 0, 0, 0.438918, 0, 0, 0, 0.438918, 36.3554, -0.0614634, -44.8782 )
+
+[node name="Flower 50" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.412832, 0, -0.14906, 0, 0.438918, 0, 0.14906, 0, 0.412832, 36.5817, -0.0614634, -45.5116 )
+
+[node name="Flower 51" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.412832, 0, -0.14906, 0, 0.438918, 0, 0.14906, 0, 0.412832, 34.4296, -0.0614634, -48.1715 )
+
+[node name="Flower 52" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.436328, 0, -0.0476085, 0, 0.438918, 0, 0.0476085, 0, 0.436328, 33.9058, -0.0614634, -48.3873 )
+
+[node name="Flower 53" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.436328, 0, -0.0476085, 0, 0.438918, 0, 0.0476085, 0, 0.436328, 33.5272, -0.0614634, -58.7544 )
+
+[node name="Flower 55" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.436328, 0, -0.0476085, 0, 0.438918, 0, 0.0476085, 0, 0.436328, 43.5077, -0.0614634, -65.7815 )
+
+[node name="Flower 56" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.436328, 0, -0.0476085, 0, 0.438918, 0, 0.0476085, 0, 0.436328, 32.0036, -0.0614634, -64.0428 )
+
+[node name="Flower 58" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.385622, 0, -0.0796619, 0, 0.393764, 0, 0.0796619, 0, 0.385622, 32.4753, -0.0614634, -64.2017 )
+
+[node name="Flower 59" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.385622, 0, -0.0796619, 0, 0.393764, 0, 0.0796619, 0, 0.385622, 27.3952, -0.0614634, -86.5598 )
+
+[node name="Flower 60" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.385622, 0, -0.0796619, 0, 0.393764, 0, 0.0796619, 0, 0.385622, 25.7453, -0.0614634, -94.8341 )
+
+[node name="Flower 61" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.385622, 0, -0.0796619, 0, 0.393764, 0, 0.0796619, 0, 0.385622, 25.5814, -0.0614634, -94.0996 )
+
+[node name="Flower 62" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.385622, 0, -0.0796619, 0, 0.393764, 0, 0.0796619, 0, 0.385622, 26.7172, -0.0614634, -95.6139 )
+
+[node name="Flower 63" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.385622, 0, -0.0796619, 0, 0.393764, 0, 0.0796619, 0, 0.385622, 25.8689, -0.0614634, -106.874 )
+
+[node name="Flower 64" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.385622, 0, -0.0796619, 0, 0.393764, 0, 0.0796619, 0, 0.385622, 42.1733, -0.0614634, -106.874 )
+
+[node name="Flower 57" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.3006, 0, 0.128688, 0, 0.326988, 0, -0.128688, 0, 0.3006, 32.3068, -0.0614634, -63.5615 )
+
+[node name="Flower 54" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.270406, 0, -0.34573, 0, 0.487287, 0, 0.34573, 0, 0.270406, 34.0717, -0.0318958, -58.4845 )
+
+[node name="Flower 65" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.368618, 0, 0.180752, 0, 0.410549, 0, -0.180752, 0, 0.368618, 69.1661, -0.0904897, -26.9068 )
+
+[node name="Flower 66" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.00161223, 0, 0.410546, 0, 0.410549, 0, -0.410546, 0, -0.00161223, 68.2866, -0.0904897, -35.2886 )
+
+[node name="Flower 67" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.00161223, 0, 0.410546, 0, 0.410549, 0, -0.410546, 0, -0.00161223, 61.9501, -0.0904897, -35.2547 )
+
+[node name="Flower 68" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.339247, 0, 0.231219, 0, 0.410549, 0, -0.231219, 0, 0.339247, 68.3291, -0.0904897, -42.4231 )
+
+[node name="Flower 69" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.339247, 0, 0.231219, 0, 0.410549, 0, -0.231219, 0, 0.339247, 96.0634, -0.0904897, -42.3083 )
+
+[node name="Flower 70" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.0243697, 0, -0.409825, 0, 0.410549, 0, 0.409825, 0, 0.0243697, 96.2287, -0.0904897, -41.6964 )
+
+[node name="Flower 71" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.0243697, 0, -0.409825, 0, 0.410549, 0, 0.409825, 0, 0.0243697, 94.917, -0.0904897, -42.4667 )
+
+[node name="Flower 72" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.0243697, 0, -0.409825, 0, 0.410549, 0, 0.409825, 0, 0.0243697, 78.9696, -0.0904897, -48.4498 )
+
+[node name="Flower 73" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.177548, 0, -0.370172, 0, 0.410549, 0, 0.370172, 0, -0.177548, 87.992, -0.0904897, -47.3687 )
+
+[node name="Flower 74" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.177548, 0, -0.370172, 0, 0.410549, 0, 0.370172, 0, -0.177548, 76.7226, -0.0904897, -45.43 )
+
+[node name="Flower 75" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.177548, 0, -0.370172, 0, 0.410549, 0, 0.370172, 0, -0.177548, 67.3185, -0.0904897, -49.95 )
+
+[node name="Flower 76" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.177548, 0, -0.370172, 0, 0.410549, 0, 0.370172, 0, -0.177548, 80.1394, -0.0904897, -57.4155 )
+
+[node name="Flower 77" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.0540351, 0, -0.406978, 0, 0.410549, 0, 0.406978, 0, 0.0540351, 78.3292, -0.0904897, -55.6589 )
+
+[node name="Flower 78" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.249267, 0, -0.326216, 0, 0.410549, 0, 0.326216, 0, -0.249267, 78.8969, -0.0904897, -56.4408 )
+
+[node name="Flower 79" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.249267, 0, -0.326216, 0, 0.410549, 0, 0.326216, 0, -0.249267, 93.1138, -0.0904897, -60.8751 )
+
+[node name="Flower 80" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.249267, 0, -0.326216, 0, 0.410549, 0, 0.326216, 0, -0.249267, 93.6386, -0.0904897, -59.2577 )
+
+[node name="Flower 81" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.249267, 0, -0.326216, 0, 0.410549, 0, 0.326216, 0, -0.249267, 69.3749, -0.0904897, -64.5168 )
+
+[node name="Flower 82" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.249267, 0, -0.326216, 0, 0.410549, 0, 0.326216, 0, -0.249267, 63.2912, -0.0904897, -65.1915 )
+
+[node name="Flower 83" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.169724, 0, -0.373824, 0, 0.410549, 0, 0.373824, 0, -0.169724, 70.4235, -0.0904897, -70.2099 )
+
+[node name="Flower 84" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.169724, 0, -0.373824, 0, 0.410549, 0, 0.373824, 0, -0.169724, 59.7536, -0.0904897, -73.8981 )
+
+[node name="Flower 85" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.169724, 0, -0.373824, 0, 0.410549, 0, 0.373824, 0, -0.169724, 59.7536, -0.0904897, -83.0023 )
+
+[node name="Flower 86" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.197551, 0, -0.359895, 0, 0.410549, 0, 0.359895, 0, 0.197551, 59.7536, -0.0904897, -81.938 )
+
+[node name="Flower 87" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.197551, 0, -0.359895, 0, 0.410549, 0, 0.359895, 0, 0.197551, 56.2058, -0.0904897, -81.7077 )
+
+[node name="Flower 88" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.197551, 0, -0.359895, 0, 0.410549, 0, 0.359895, 0, 0.197551, 71.2567, -0.0904897, -86.0226 )
+
+[node name="Flower 89" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.102502, 0, -0.397548, 0, 0.410549, 0, 0.397548, 0, -0.102502, 71.2567, -0.0904897, -86.9086 )
+
+[node name="Flower 90" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.405308, 0, -0.0653917, 0, 0.410549, 0, 0.0653917, 0, -0.405308, 71.8206, -0.0904897, -86.3138 )
+
+[node name="Flower 91" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.405308, 0, -0.0653917, 0, 0.410549, 0, 0.0653917, 0, -0.405308, 72.4215, -0.0904897, -89.2872 )
+
+[node name="Flower 92" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.405308, 0, -0.0653917, 0, 0.410549, 0, 0.0653917, 0, -0.405308, 57.7151, -0.0904897, -88.2586 )
+
+[node name="Flower 93" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.405308, 0, -0.0653917, 0, 0.410549, 0, 0.0653917, 0, -0.405308, 57.7151, -0.0904897, -100.671 )
+
+[node name="Flower 94" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.10858, 0, -0.528351, 0, 0.539393, 0, 0.528351, 0, -0.10858, 75.528, -0.0614634, -27.1745 )
+
+[node name="Flower 95" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.10858, 0, -0.528351, 0, 0.539393, 0, 0.528351, 0, -0.10858, 62.9449, -0.0614634, -43.3254 )
+
+[node name="Flower 96" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.10858, 0, -0.528351, 0, 0.539393, 0, 0.528351, 0, -0.10858, 78.0153, -0.0614634, -40.4963 )
+
+[node name="Flower 97" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.10858, 0, -0.528351, 0, 0.539393, 0, 0.528351, 0, -0.10858, 88.9239, -0.0614634, -54.1971 )
+
+[node name="Flower 98" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.284495, 0, -0.331258, 0, 0.436657, 0, 0.331258, 0, -0.284495, 89.4604, -0.0614634, -54.8229 )
+
+[node name="Flower 99" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.284495, 0, -0.331258, 0, 0.436657, 0, 0.331258, 0, -0.284495, 75.6494, -0.0614634, -49.2305 )
+
+[node name="Flower 100" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.205572, 0, -0.239362, 0, 0.315522, 0, 0.239362, 0, -0.205572, 78.9919, -0.0614634, -52.5934 )
+
+[node name="Flower 101" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.205572, 0, -0.239362, 0, 0.315522, 0, 0.239362, 0, -0.205572, 61.8143, -0.0614634, -54.955 )
+
+[node name="Flower 102" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.205572, 0, -0.239362, 0, 0.315522, 0, 0.239362, 0, -0.205572, 67.1078, -0.0614634, -58.9919 )
+
+[node name="Flower 103" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.205572, 0, -0.239362, 0, 0.315522, 0, 0.239362, 0, -0.205572, 80.0018, -0.0614634, -58.9919 )
+
+[node name="Flower 104" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.205572, 0, -0.239362, 0, 0.315522, 0, 0.239362, 0, -0.205572, 80.0018, -0.0614634, -64.4994 )
+
+[node name="Flower 105" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.107366, 0, -0.296693, 0, 0.315522, 0, 0.296693, 0, -0.107366, 79.4349, -0.0614634, -64.8233 )
+
+[node name="Flower 106" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.146333, 0, -0.404374, 0, 0.430037, 0, 0.404374, 0, -0.146333, 65.7702, -0.0614634, -62.4293 )
+
+[node name="Flower 107" parent="Environment/Flowers" instance=ExtResource( 8 )]
+transform = Transform( -0.0781596, 0, -0.380326, 0, 0.388274, 0, 0.380326, 0, -0.0781596, 89.8836, -0.0614634, -54.1971 )
+
+[node name="Flower 108" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.438918, 0, 0, 0, 0.438918, 0, 0, 0, 0.438918, 78.0931, -0.0614634, -32.6521 )
+
+[node name="Flower 109" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.438918, 0, 0, 0, 0.438918, 0, 0, 0, 0.438918, 78.8108, -0.0614634, -32.8362 )
+
+[node name="Flower 110" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.438918, 0, 0, 0, 0.438918, 0, 0, 0, 0.438918, 66.8133, -0.0614634, -31.256 )
+
+[node name="Flower 111" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.438918, 0, 0, 0, 0.438918, 0, 0, 0, 0.438918, 67.1872, -0.0614634, -30.8821 )
+
+[node name="Flower 112" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.438918, 0, 0, 0, 0.438918, 0, 0, 0, 0.438918, 67.9183, -0.0614634, -28.8215 )
+
+[node name="Flower 113" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.438918, 0, 0, 0, 0.438918, 0, 0, 0, 0.438918, 68.4752, -0.0614634, -44.8782 )
+
+[node name="Flower 114" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.412832, 0, -0.14906, 0, 0.438918, 0, 0.14906, 0, 0.412832, 68.7014, -0.0614634, -45.5116 )
+
+[node name="Flower 115" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.412832, 0, -0.14906, 0, 0.438918, 0, 0.14906, 0, 0.412832, 59.975, -0.0614634, -48.1715 )
+
+[node name="Flower 116" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.436328, 0, -0.0476085, 0, 0.438918, 0, 0.0476085, 0, 0.436328, 59.4512, -0.0614634, -48.3873 )
+
+[node name="Flower 117" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.436328, 0, -0.0476085, 0, 0.438918, 0, 0.0476085, 0, 0.436328, 66.769, -0.0614634, -58.7544 )
+
+[node name="Flower 118" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.436328, 0, -0.0476085, 0, 0.438918, 0, 0.0476085, 0, 0.436328, 76.7495, -0.0614634, -65.7815 )
+
+[node name="Flower 119" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.436328, 0, -0.0476085, 0, 0.438918, 0, 0.0476085, 0, 0.436328, 57.591, -0.0614634, -64.0428 )
+
+[node name="Flower 120" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.385622, 0, -0.0796619, 0, 0.393764, 0, 0.0796619, 0, 0.385622, 65.717, -0.0614634, -64.2017 )
+
+[node name="Flower 121" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.385622, 0, -0.0796619, 0, 0.393764, 0, 0.0796619, 0, 0.385622, 60.637, -0.0614634, -86.5598 )
+
+[node name="Flower 122" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.385622, 0, -0.0796619, 0, 0.393764, 0, 0.0796619, 0, 0.385622, 58.987, -0.0614634, -94.8341 )
+
+[node name="Flower 123" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.385622, 0, -0.0796619, 0, 0.393764, 0, 0.0796619, 0, 0.385622, 58.8232, -0.0614634, -94.0996 )
+
+[node name="Flower 124" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.385622, 0, -0.0796619, 0, 0.393764, 0, 0.0796619, 0, 0.385622, 59.9589, -0.0614634, -95.6139 )
+
+[node name="Flower 125" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.385622, 0, -0.0796619, 0, 0.393764, 0, 0.0796619, 0, 0.385622, 59.1107, -0.0614634, -106.874 )
+
+[node name="Flower 126" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.385622, 0, -0.0796619, 0, 0.393764, 0, 0.0796619, 0, 0.385622, 75.415, -0.0614634, -106.874 )
+
+[node name="Flower 127" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.3006, 0, 0.128688, 0, 0.326988, 0, -0.128688, 0, 0.3006, 65.5486, -0.0614634, -63.5615 )
+
+[node name="Flower 128" parent="Environment/Flowers" instance=ExtResource( 5 )]
+transform = Transform( 0.270406, 0, -0.34573, 0, 0.487287, 0, 0.34573, 0, 0.270406, 67.3134, -0.0318958, -58.4845 )
+
+[node name="Flower 138" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.39284, 0, -0.119279, 0, 0.410549, 0, 0.119279, 0, -0.39284, 45.2794, -0.0904897, -100.224 )
+
+[node name="Flower 139" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.367954, 0, 0.182102, 0, 0.410549, 0, -0.182102, 0, -0.367954, 46.1465, -0.0904897, -100.042 )
+
+[node name="Flower 140" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.0193967, 0, 0.410091, 0, 0.410549, 0, -0.410091, 0, 0.0193967, 45.4484, -0.0904897, -99.6122 )
+
+[node name="Flower 141" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.39284, 0, -0.119279, 0, 0.410549, 0, 0.119279, 0, -0.39284, 47.6386, -0.0904897, -104.1 )
+
+[node name="Flower 142" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.367954, 0, 0.182102, 0, 0.410549, 0, -0.182102, 0, -0.367954, 48.5057, -0.0904897, -103.918 )
+
+[node name="Flower 143" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.0193967, 0, 0.410091, 0, 0.410549, 0, -0.410091, 0, 0.0193967, 47.8076, -0.0904897, -103.489 )
+
+[node name="Flower 144" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( -0.192558, 0, 0.362591, 0, 0.410549, 0, -0.362591, 0, -0.192558, 37.2561, -0.0904897, -109.465 )
+
+[node name="Flower 145" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.107987, 0, 0.396093, 0, 0.410549, 0, -0.396093, 0, 0.107987, 37.2438, -0.0904897, -108.579 )
+
+[node name="Flower 146" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.406173, 0, 0.059783, 0, 0.410549, 0, -0.059783, 0, 0.406173, 36.6883, -0.0904897, -109.181 )
+
+[node name="Flower 147" parent="Environment/Flowers" instance=ExtResource( 6 )]
+transform = Transform( 0.406173, 0, 0.059783, 0, 0.410549, 0, -0.059783, 0, 0.406173, 42.4403, -0.0904897, -114.148 )
+
+[node name="Mushroom_Onai" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( 0.107319, 0, 0, 0, 0.107319, 0, 0, 0, 0.107319, 35.3246, 0.0297098, -27.9117 )
+
+[node name="Mushroom_Onai2" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( 0.0210589, 0, 0.0464414, 0, 0.0509929, 0, -0.0464414, 0, 0.0210589, 35.8846, 0.0297098, -27.5429 )
+
+[node name="Mushroom_Onai4" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( 0.0210589, 0, 0.0464414, 0, 0.0509929, 0, -0.0464414, 0, 0.0210589, 44.1438, 0.0297098, -39.6666 )
+
+[node name="Mushroom_Onai8" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( 0.0210589, 0, 0.0464414, 0, 0.0509929, 0, -0.0464414, 0, 0.0210589, 34.8831, 0.0297098, -45.6369 )
+
+[node name="Mushroom_Onai9" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( -0.00306419, 0, -0.0509008, 0, 0.0509929, 0, 0.0509008, 0, -0.00306419, 35.3712, 0.0297098, -45.2444 )
+
+[node name="Mushroom_Onai10" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( -0.00306419, 0, -0.0509008, 0, 0.0509929, 0, 0.0509008, 0, -0.00306419, 35.3712, 0.0297098, -52.9597 )
+
+[node name="Mushroom_Onai13" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( -0.00306419, 0, -0.0509008, 0, 0.0509929, 0, 0.0509008, 0, -0.00306419, 44.1806, 0.0297098, -58.4259 )
+
+[node name="Mushroom_Onai11" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( -0.00225014, 0, -0.0373782, 0, 0.0374458, 0, 0.0373782, 0, -0.00225014, 35.6657, 0.0297098, -52.7269 )
+
+[node name="Mushroom_Onai12" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( -0.0181118, 0, 0.0327743, 0, 0.0374458, 0, -0.0327743, 0, -0.0181118, 35.5137, 0.0297098, -53.1592 )
+
+[node name="Mushroom_Onai5" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( -0.0138398, 0, 0.0490789, 0, 0.0509929, 0, -0.0490789, 0, -0.0138398, 44.3018, 0.0297098, -39.2008 )
+
+[node name="Mushroom_Onai6" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( -0.0105005, 0, 0.034843, 0, 0.0363908, 0, -0.034843, 0, -0.0105005, 44.0294, 0.0297098, -39.3534 )
+
+[node name="Mushroom_Onai7" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( -0.0358488, 0, 0.00625727, 0, 0.0363908, 0, -0.00625727, 0, -0.0358488, 44.1874, 0.0297098, -38.8194 )
+
+[node name="Mushroom_Onai3" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( -0.00387062, 0, 0.0377842, 0, 0.0379819, 0, -0.0377842, 0, -0.00387062, 35.83, 0.0297098, -27.8753 )
+
+[node name="Mushroom_Onai14" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( -0.00387062, 0, 0.0377842, 0, 0.0379819, 0, -0.0377842, 0, -0.00387062, 40.9521, 0.0297098, -26.7406 )
+
+[node name="Mushroom_Onai15" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( 0.0369253, 0, -0.00889635, 0, 0.0379819, 0, 0.00889635, 0, 0.0369253, 41.0485, 0.0297098, -26.4595 )
+
+[node name="Mushroom_Onai16" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( -0.00387062, 0, 0.0377842, 0, 0.0379819, 0, -0.0377842, 0, -0.00387062, 41.4512, 0.0297098, -26.3532 )
+
+[node name="Mushroom_Onai17" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( 0.0312181, 0, -0.00947885, 0, 0.0326255, 0, 0.00947885, 0, 0.0312181, 41.3128, 0.0297098, -26.7102 )
+
+[node name="Mushroom_Onai18" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( -0.0236527, 0, 0.0224715, 0, 0.0326255, 0, -0.0224715, 0, -0.0236527, 40.7912, 0.0297098, -26.2627 )
+
+[node name="flower_NH(fromtable)2" parent="Environment/Flowers" instance=ExtResource( 20 )]
+transform = Transform( 0.768603, 0, -0.525872, 0, 0.858809, 0, 0.0736657, 0, 0.480347, 36.0554, -1.73384, -23.6845 )
+
+[node name="Mushroom_Onai19" parent="Environment/Flowers" instance=ExtResource( 10 )]
+transform = Transform( -0.0147443, 0, 0.0500302, 0, 0.0337419, 0, -0.0200218, 0, -0.0189827, 47.3541, -0.0341067, -25.2987 )
+
+[node name="mushroom cluster" type="Spatial" parent="Environment/Flowers"]
+
+[node name="Mushroom_Onai14" parent="Environment/Flowers/mushroom cluster" instance=ExtResource( 10 )]
+transform = Transform( -0.00387062, 0, 0.0377842, 0, 0.0379819, 0, -0.0377842, 0, -0.00387062, 53.5805, 0.0297098, -26.7406 )
+
+[node name="Mushroom_Onai15" parent="Environment/Flowers/mushroom cluster" instance=ExtResource( 10 )]
+transform = Transform( 0.0369253, 0, -0.00889635, 0, 0.0379819, 0, 0.00889635, 0, 0.0369253, 53.6769, 0.0297098, -26.4595 )
+
+[node name="Mushroom_Onai16" parent="Environment/Flowers/mushroom cluster" instance=ExtResource( 10 )]
+transform = Transform( -0.00387062, 0, 0.0377842, 0, 0.0379819, 0, -0.0377842, 0, -0.00387062, 54.0796, 0.0297098, -26.3532 )
+
+[node name="Mushroom_Onai17" parent="Environment/Flowers/mushroom cluster" instance=ExtResource( 10 )]
+transform = Transform( 0.0312181, 0, -0.00947885, 0, 0.0326255, 0, 0.00947885, 0, 0.0312181, 53.9412, 0.0297098, -26.7102 )
+
+[node name="Mushroom_Onai18" parent="Environment/Flowers/mushroom cluster" instance=ExtResource( 10 )]
+transform = Transform( -0.0236527, 0, 0.0224715, 0, 0.0326255, 0, -0.0224715, 0, -0.0236527, 53.4196, 0.0297098, -26.2627 )
+
+[node name="mushroom cluster2" type="Spatial" parent="Environment/Flowers"]
+
+[node name="Mushroom_Onai14" parent="Environment/Flowers/mushroom cluster2" instance=ExtResource( 10 )]
+transform = Transform( -0.00387062, 0, 0.0377842, 0, 0.0379819, 0, -0.0377842, 0, -0.00387062, 45.9917, 0.0297098, -26.9316 )
+
+[node name="Mushroom_Onai15" parent="Environment/Flowers/mushroom cluster2" instance=ExtResource( 10 )]
+transform = Transform( 0.0369253, 0, -0.00889635, 0, 0.0379819, 0, 0.00889635, 0, 0.0369253, 46.0881, 0.0297098, -26.6505 )
+
+[node name="Mushroom_Onai16" parent="Environment/Flowers/mushroom cluster2" instance=ExtResource( 10 )]
+transform = Transform( -0.00387062, 0, 0.0377842, 0, 0.0379819, 0, -0.0377842, 0, -0.00387062, 46.4908, 0.0297098, -26.5442 )
+
+[node name="Mushroom_Onai17" parent="Environment/Flowers/mushroom cluster2" instance=ExtResource( 10 )]
+transform = Transform( 0.0312181, 0, -0.00947885, 0, 0.0326255, 0, 0.00947885, 0, 0.0312181, 46.3524, 0.0297098, -26.9012 )
+
+[node name="Mushroom_Onai18" parent="Environment/Flowers/mushroom cluster2" instance=ExtResource( 10 )]
+transform = Transform( -0.0236527, 0, 0.0224715, 0, 0.0326255, 0, -0.0224715, 0, -0.0236527, 45.8308, 0.0297098, -26.4537 )
+
+[node name="mushroom cluster3" type="Spatial" parent="Environment/Flowers"]
+
+[node name="Mushroom_Onai14" parent="Environment/Flowers/mushroom cluster3" instance=ExtResource( 10 )]
+transform = Transform( -0.00387062, 0, 0.0377842, 0, 0.0379819, 0, -0.0377842, 0, -0.00387062, 53.0271, 0.0297098, -19.2898 )
+
+[node name="Mushroom_Onai15" parent="Environment/Flowers/mushroom cluster3" instance=ExtResource( 10 )]
+transform = Transform( 0.0369253, 0, -0.00889635, 0, 0.0379819, 0, 0.00889635, 0, 0.0369253, 53.1235, 0.0297098, -19.0087 )
+
+[node name="Mushroom_Onai16" parent="Environment/Flowers/mushroom cluster3" instance=ExtResource( 10 )]
+transform = Transform( -0.00387062, 0, 0.0377842, 0, 0.0379819, 0, -0.0377842, 0, -0.00387062, 53.5262, 0.0297098, -18.9024 )
+
+[node name="Mushroom_Onai17" parent="Environment/Flowers/mushroom cluster3" instance=ExtResource( 10 )]
+transform = Transform( 0.0312181, 0, -0.00947885, 0, 0.0326255, 0, 0.00947885, 0, 0.0312181, 53.3878, 0.0297098, -19.2594 )
+
+[node name="Mushroom_Onai18" parent="Environment/Flowers/mushroom cluster3" instance=ExtResource( 10 )]
+transform = Transform( -0.0236527, 0, 0.0224715, 0, 0.0326255, 0, -0.0224715, 0, -0.0236527, 52.8662, 0.0297098, -18.8119 )
+
+[node name="Logs" type="Spatial" parent="Environment"]
+
+[node name="CharltonLog" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.411684, 5.35245e-09, 0.160103, -5.4389e-09, 0.44172, -7.81868e-10, -0.160103, -1.24265e-09, 0.411684, 34.3297, 0, -29.6836 )
+
+[node name="CharltonLog2" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.415328, 5.38014e-09, 0.150396, -5.4389e-09, 0.44172, -7.81868e-10, -0.193023, -1.43317e-09, 0.533045, 38.8385, 1.90735e-06, -76.0167 )
+
+[node name="CharltonLog16" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.360739, 5.07702e-09, 0.358886, -5.4389e-09, 0.44172, -7.81868e-10, -0.255003, -2.26038e-09, 0.496858, 41.7559, 0, -67.7476 )
+
+[node name="CharltonLog12" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.380687, 5.20095e-09, 0.290137, -5.4389e-09, 0.44172, -7.81868e-10, -0.224098, -1.90096e-09, 0.484936, 34.5461, 0, -63.2991 )
+
+[node name="CharltonLog19" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.440133, 5.48558e-09, 0.0374155, -5.4389e-09, 0.44172, -7.81868e-10, -0.0533931, 4.54312e-10, 0.628084, 35.71, 0, -55.9185 )
+
+[node name="CharltonLog3" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.439589, 5.48936e-09, 0.0433345, -5.4389e-09, 0.44172, -7.81868e-10, -0.0596605, 3.36639e-10, 0.605201, 26.0854, 0, -99.5904 )
+
+[node name="CharltonLog18" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.214542, 1.67059e-09, -0.548605, -5.4389e-09, 0.44172, -7.81868e-10, 0.388291, 5.23981e-09, 0.25919, 25.2165, 0, -120.574 )
+
+[node name="CharltonLog6" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.324198, 4.96599e-09, 0.550345, -5.4389e-09, 0.44172, -7.81868e-10, -0.300115, -2.61212e-09, 0.611954, 29.3944, -0.0273063, -71.3812 )
+
+[node name="CharltonLog9" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.436472, 5.25411e-09, -0.0678893, -5.4389e-09, 0.44172, -7.81868e-10, 0.0678893, 1.6085e-09, 0.436472, 43.9789, -0.0359229, -29.605 )
+
+[node name="CharltonLog15" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.436472, 5.25411e-09, -0.0678893, -5.4389e-09, 0.44172, -7.81868e-10, 0.0882443, 2.09077e-09, 0.567338, 44.7129, -0.0359229, -37.1099 )
+
+[node name="CharltonLog10" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.408185, 5.3248e-09, 0.168825, -5.4389e-09, 0.44172, -7.81868e-10, -0.191828, -1.54103e-09, 0.463801, 34.8241, -0.0359229, -43.7654 )
+
+[node name="CharltonLog13" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.448431, 5.35029e-09, -0.0967415, -5.4389e-09, 0.44172, -7.81868e-10, 0.0481895, 1.45006e-09, 0.483998, 35.5293, -0.0359229, -50.3408 )
+
+[node name="CharltonLog14" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.421965, 5.84765e-09, 0.179114, -5.75993e-09, 0.44172, -9.13351e-10, -0.160749, -8.14831e-10, 0.659513, 45.428, -0.0359229, -56.7104 )
+
+[node name="CharltonLog11" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.449473, 5.38408e-09, -0.0849044, -5.4389e-09, 0.44172, -7.81868e-10, 0.0404725, 1.4338e-09, 0.528495, 46.7533, -0.0359229, -46.2612 )
+
+[node name="CharltonLog7" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.43683, 5.07921e-09, -0.169189, -5.4389e-09, 0.44172, -7.81868e-10, 0.0765808, 2.15064e-09, 0.682298, 38.617, -0.0853555, -97.1957 )
+
+[node name="CharltonLog8" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.422324, 5.25996e-09, 0.0338332, -5.20825e-09, 0.422988, -7.48712e-10, -0.023703, 7.83901e-10, 0.607754, 38.2158, -0.0853555, -90.0807 )
+
+[node name="CharltonLog17" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.415972, 4.9283e-09, -0.109356, -5.20825e-09, 0.422988, -7.48712e-10, 0.0768916, 2.04914e-09, 0.62279, 25.6288, -0.0853555, -88.7498 )
+
+[node name="CharltonLog4" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.43314, 5.51728e-09, 0.103974, -5.4389e-09, 0.44172, -7.81868e-10, -0.0868192, -1.13863e-10, 0.539612, 26.0407, -0.0184069, -76.6781 )
+
+[node name="CharltonLog5" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( 0.143686, 1.02986e-09, -0.417697, -5.4389e-09, 0.44172, -7.81868e-10, 0.417697, 5.39743e-09, 0.143686, 91.4407, 0, -77.3233 )
+
+[node name="CharltonLog20" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( -0.0383034, -1.57321e-09, -0.622345, -5.4389e-09, 0.44172, -7.81868e-10, 0.441702, 5.27475e-09, -0.0926089, 7.42244, 0, -60.4771 )
+
+[node name="CharltonLog21" parent="Environment/Logs" instance=ExtResource( 9 )]
+transform = Transform( -0.424124, -5.47142e-09, -0.140774, -5.4389e-09, 0.44172, -7.81868e-10, 0.130064, 5.56798e-10, -0.590194, 51.9942, 0, -112.275 )
+
+[node name="STONES" type="Spatial" parent="Environment"]
+
+[node name="SteppingStone_Onai" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.68746, 0, 0, 0, 0.68746, 0, 0, 0, 0.68746, 39.1241, -0.0419494, -27.3736 )
+
+[node name="SteppingStone_Onai2" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( -0.687329, 0, 0.0133893, 0, 0.68746, 0, -0.0133893, 0, -0.687329, 38.4936, -0.0419494, -32.1847 )
+
+[node name="SteppingStone_Onai3" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( -0.687329, 0, 0.0133893, 0, 0.68746, 0, -0.0133893, 0, -0.687329, 39.0633, -0.0419494, -35.4965 )
+
+[node name="SteppingStone_Onai4" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.687454, 0, 0.00292763, 0, 0.68746, 0, -0.00292763, 0, 0.687454, 40.1149, -0.0419494, -37.1861 )
+
+[node name="SteppingStone_Onai5" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.200787, 0, -0.657484, 0, 0.68746, 0, 0.657484, 0, 0.200787, 39.4402, -0.0419494, -40.816 )
+
+[node name="SteppingStone_Onai6" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.678244, 0, 0.112185, 0, 0.68746, 0, -0.112185, 0, 0.678244, 40.3297, -0.0419494, -43.6162 )
+
+[node name="SteppingStone_Onai7" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.534551, 0, -0.432269, 0, 0.68746, 0, 0.432269, 0, 0.534551, 39.2098, -0.0419494, -47.0145 )
+
+[node name="SteppingStone_Onai8" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.416869, 0, 0.546645, 0, 0.68746, 0, -0.546645, 0, 0.416869, 40.3254, -0.0419494, -50.372 )
+
+[node name="SteppingStone_Onai9" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.674822, 0, 0.131209, 0, 0.68746, 0, -0.131209, 0, 0.674822, 41.1712, -0.0419494, -52.7086 )
+
+[node name="SteppingStone_Onai10" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.276883, 0, 0.629235, 0, 0.68746, 0, -0.629235, 0, 0.276883, 41.4461, -0.0419494, -56.5987 )
+
+[node name="SteppingStone_Onai11" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.647522, 0, 0.230903, 0, 0.68746, 0, -0.230903, 0, 0.647522, 41.7823, -0.0419494, -58.9183 )
+
+[node name="SteppingStone_Onai12" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.394095, 0, -0.563285, 0, 0.68746, 0, 0.563285, 0, 0.394095, 39.2722, -0.0419494, -61.5404 )
+
+[node name="SteppingStone_Onai13" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.259528, 0, 0.636589, 0, 0.68746, 0, -0.636589, 0, 0.259528, 40.3261, -0.0419494, -64.7157 )
+
+[node name="SteppingStone_Onai14" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.668546, 0, -0.160146, 0, 0.68746, 0, 0.160146, 0, 0.668546, 36.9733, -0.0419494, -65.8835 )
+
+[node name="SteppingStone_Onai15" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.125445, 0, 0.675918, 0, 0.68746, 0, -0.675918, 0, 0.125445, 36.2712, -0.0419494, -69.1793 )
+
+[node name="SteppingStone_Onai16" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.687053, 0, 0.0236444, 0, 0.68746, 0, -0.0236444, 0, 0.687053, 36.1783, -0.0419494, -71.1824 )
+
+[node name="SteppingStone_Onai17" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.643419, 0, -0.242101, 0, 0.68746, 0, 0.242101, 0, 0.643419, 33.5062, -0.0419494, -73.2748 )
+
+[node name="SteppingStone_Onai18" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( -0.369129, 0, 0.579952, 0, 0.68746, 0, -0.579952, 0, -0.369129, 33.0971, -0.0419494, -77.5401 )
+
+[node name="SteppingStone_Onai19" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.6872, 0, -0.018895, 0, 0.68746, 0, 0.018895, 0, 0.6872, 31.6027, -0.0419494, -78.8607 )
+
+[node name="SteppingStone_Onai20" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.278924, 0, -0.628333, 0, 0.68746, 0, 0.628333, 0, 0.278924, 30.73, -0.0419494, -82.2232 )
+
+[node name="SteppingStone_Onai21" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.175377, 0, -0.664714, 0, 0.68746, 0, 0.664714, 0, 0.175377, 31.2632, -0.0419494, -85.1724 )
+
+[node name="SteppingStone_Onai22" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.588761, 0, 0.354911, 0, 0.68746, 0, -0.354911, 0, 0.588761, 32.0097, -0.0419494, -87.9685 )
+
+[node name="SteppingStone_Onai23" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( -0.158559, 0, 0.668925, 0, 0.68746, 0, -0.668925, 0, -0.158559, 32.0639, -0.0419494, -91.879 )
+
+[node name="SteppingStone_Onai24" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( 0.165264, 0, 0.6673, 0, 0.68746, 0, -0.6673, 0, 0.165264, 33.2289, -0.0419494, -94.6166 )
+
+[node name="SteppingStone_Onai25" parent="Environment/STONES" instance=ExtResource( 14 )]
+transform = Transform( -0.0778823, 0, 0.683034, 0, 0.68746, 0, -0.683034, 0, -0.0778823, 33.2103, -0.0419494, -97.8206 )
+
+[node name="alterations" type="Spatial" parent="Environment"]
+
+[node name="CharltonLog23" parent="Environment/alterations" instance=ExtResource( 9 )]
+transform = Transform( -0.277071, -2.5496e-09, 0.486971, -5.4389e-09, 0.44172, -7.81868e-10, -0.34413, -4.91178e-09, -0.381067, 74.6881, -0.0359229, -10.6183 )
+
+[node name="CharltonLog24" parent="Environment/alterations" instance=ExtResource( 9 )]
+transform = Transform( 0.132032, 2.66557e-09, 0.58747, -5.4389e-09, 0.44172, -7.81868e-10, -0.421617, -4.84982e-09, 0.192956, 64.9573, -0.0359229, -26.462 )
+
+[node name="Charlton_ForestPond" parent="Environment/alterations" instance=ExtResource( 19 )]
+transform = Transform( 0.96607, 0, -0.25828, 0, 1, 0, 0.25828, 0, 0.96607, 27.9159, -0.180347, -15.3064 )
+
+[node name="Charlton_Well" parent="Environment/alterations" instance=ExtResource( 21 )]
+transform = Transform( 0.341772, 0, 0, 0, 0.185514, 0, 0, 0, 0.142988, 67.2754, 0, -20.5427 )
+
+[node name="NewCabin" parent="." instance=ExtResource( 12 )]
+transform = Transform( -0.017095, 0, 0.699982, 0, 0.70019, 0, -0.999702, 0, -0.0244148, 41.5221, 0, -25.2319 )
+
+[node name="Lights" type="Spatial" parent="."]
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Lights"]
+transform = Transform( 1, 0, 0, 0, 0.0689381, -0.997621, 0, 0.997621, 0.0689381, 61.6233, 24.6073, -58.4691 )
+
+[node name="OmniLight" type="OmniLight" parent="Lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 39.0589, 3.17968, -24.6576 )
+light_color = Color( 0.866667, 0.733333, 0, 1 )
+light_energy = 6.652
+light_indirect_energy = 16.0
+omni_range = 1.85839
+
+[node name="AnimatedCat" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.000902963, 0, 0.175373, 0, 0.175376, 0, -0.175373, 0, 0.000902963, 41.1321, 0.276552, -21.1876 )
+
+[node name="OtterCharacter" parent="." instance=ExtResource( 16 )]
+transform = Transform( -0.0143017, 0, -0.538971, 0, 0.539161, 0, 0.538971, 0, -0.0143017, 60.6262, -0.0180521, -25.8761 )
+
+[node name="PolarBearCharacterwithoutscarf" parent="." instance=ExtResource( 18 )]
+transform = Transform( -0.614638, 0.08047, -0.596834, 0.0779257, 0.645167, 0.0718103, 0.296031, -0.00275366, -0.616463, 39.8651, 0.0770426, -24.7103 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 16 )

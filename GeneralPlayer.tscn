@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Player.gd" type="Script" id=1]
+[ext_resource path="res://models-tscn/NH_HJ_PlayerCharacter.tscn" type="PackedScene" id=3]
+
+[sub_resource type="BoxShape" id=1]
+
+[node name="GeneralPlayer" type="KinematicBody"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1.5, 0, 0, 0, 0.556768, 0, 1.50926, 0 )
+shape = SubResource( 1 )
+
+[node name="Camera" type="ClippedCamera" parent="."]
+transform = Transform( 0.99929, -0.00654484, 0.0371176, 0, 0.984808, 0.173648, -0.0376902, -0.173525, 0.984108, 0.650972, 4.04512, 6.69329 )
+near = 0.01
+far = 1000.0
+
+[node name="Player Character" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.993413, 0, 0.11459, 0, 1, 0, -0.11459, 0, -0.993413, 0, 0.0227718, 0 )
+
+[node name="InteractionRaycast" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0 )
+enabled = true
+cast_to = Vector3( -0.1, 0, -10 )
+collision_mask = 3
+debug_shape_custom_color = Color( 1, 0, 0, 1 )
+debug_shape_thickness = 1

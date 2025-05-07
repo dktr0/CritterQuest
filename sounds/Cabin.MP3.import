@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Cabin.MP3-dcb1f8e88e1b010e6a9d8725d0661030.mp3str"
+
+[deps]
+
+source_file="res://sounds/Cabin.MP3"
+dest_files=[ "res://.import/Cabin.MP3-dcb1f8e88e1b010e6a9d8725d0661030.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Positional Audio/felixblume_Forest Ambience with birds and rivers (modified).ogg" type="AudioStream" id=1]
+
+[node name="CabinPositionalAudio" type="Spatial"]
+
+[node name="CabinAmbience1" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 64.768, 4.08474, -42.46 )
+stream = ExtResource( 1 )
+unit_db = 16.0
+autoplay = true
+
+[node name="CabinAmbience2" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 71.2702, 4.08474, -98.5998 )
+stream = ExtResource( 1 )
+unit_db = 16.0
+autoplay = true
+
+[node name="CabinAmbience3" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.3739, 5.89496, -70.9198 )
+stream = ExtResource( 1 )
+unit_db = 16.0
+autoplay = true

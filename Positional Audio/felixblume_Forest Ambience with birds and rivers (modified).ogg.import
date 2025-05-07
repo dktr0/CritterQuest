@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/felixblume_Forest Ambience with birds and rivers (modified).ogg-99c8220f11ef90a915f7d1ea5488acae.oggstr"
+
+[deps]
+
+source_file="res://Positional Audio/felixblume_Forest Ambience with birds and rivers (modified).ogg"
+dest_files=[ "res://.import/felixblume_Forest Ambience with birds and rivers (modified).ogg-99c8220f11ef90a915f7d1ea5488acae.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
